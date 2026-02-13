@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Butiktatli | Boutique Dessert Shop</title>
+  <meta name="description" content="Butiktatli: butik pasta ve tatlı satışının yanında makaron, cupcake ve tasarım pasta eğitimleri. Modern tek sayfa, responsive website." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Butiktatli | Boutique Dessert Shop" />
+  <meta property="og:description" content="Butik tatlı satışları ve profesyonel pastacılık eğitimleri: makaron, cupcake, tasarım pastalar." />
+  <meta property="og:image" content="img/hero.svg" />
+  <meta property="og:locale" content="tr_TR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Butiktatli | Boutique Dessert Shop" />
+  <meta name="twitter:description" content="Butik tatlı satışları ve profesyonel pastacılık eğitimleri." />
+  <meta name="twitter:image" content="img/hero.svg" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Butiktatli",
+    "description": "Butik pasta ve tatlı satışının yanında makaron, cupcake ve tasarım pasta eğitimleri.",
+    "image": "https://example.com/img/hero.svg",
+    "url": "https://example.com/",
+    "telephone": "+90 555 555 55 55",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "İstanbul",
+      "addressCountry": "TR"
+    },
+    "sameAs": [
+      "https://instagram.com/",
+      "https://facebook.com/",
+      "https://wa.me/905555555555"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" id="t_skip">İçeriğe atla</a>
+
+  <!-- NAV -->
+  <header class="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner" aria-label="Üst menü">
+        <a class="brand" href="#" aria-label="Anasayfa">
+          <img class="brand-logo" src="img/logo.png" alt="Butiktatli logo" loading="eager" />
+          <div>
+            <strong id="t_brand">Butiktatli</strong>
+            <span id="t_brand_sub">Boutique Dessert Shop</span>
+          </div>
+        </a>
+
+        <nav class="nav-links" aria-label="Sayfa bölümleri">
+          <a href="#about" id="t_nav_about">Hakkında</a>
+          <a href="#courses" id="t_nav_courses">Kurslar</a>
+          <a href="#gallery" id="t_nav_gallery">Galeri</a>
+          <a href="#contact" id="t_nav_contact">İletişim</a>
+        </nav>
+
+        <div class="nav-actions" aria-label="Hızlı aksiyonlar">
+          <div class="lang-switch" aria-label="Dil seçimi">
+            <button type="button" id="langTR" class="active" aria-label="Türkçe">TR</button>
+            <button type="button" id="langEN" aria-label="English">EN</button>
+          </div>
+          <a class="btn btn-primary" href="#contact" id="t_cta_primary"><i class="bi bi-calendar2-week"></i> Kayıt & Randevu</a>
+          <a class="btn" href="#courses" id="t_cta_secondary"><i class="bi bi-mortarboard"></i> Eğitimler</a>
+        </div>
+
+        <button id="burger" class="burger" type="button" aria-label="Mobil menü" aria-expanded="false">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="mobilePanel" class="mobile-panel" aria-label="Mobil menü">
+        <a href="#about" id="t_m_about">Hakkında <i class="bi bi-arrow-right"></i></a>
+        <a href="#courses" id="t_m_courses">Kurslar <i class="bi bi-arrow-right"></i></a>
+        <a href="#gallery" id="t_m_gallery">Galeri <i class="bi bi-arrow-right"></i></a>
+        <a href="#contact" id="t_m_contact">İletişim <i class="bi bi-arrow-right"></i></a>
+        <div class="sep"></div>
+        <div style="display:flex; gap:10px; padding: 6px 6px 2px;">
+          <button type="button" class="btn" style="padding:10px 14px;" id="langTR_m">TR</button>
+          <button type="button" class="btn" style="padding:10px 14px;" id="langEN_m">EN</button>
+        </div>
+        <div class="sep"></div>
+        <a href="#contact" id="t_m_cta">Kayıt & Randevu <i class="bi bi-calendar2-week"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="container hero-grid">
+        <div data-aos="fade-up">
+          <div class="kicker" id="t_kicker">
+            <i class="bi bi-stars" aria-hidden="true"></i>
+            <span>Butik tatlılar • Profesyonel eğitimler • Sıcak atölye deneyimi</span>
+          </div>
+
+          <h1 id="t_h1">Butik pastacılıkta ustalaş: eğitim + satış, hepsi Butiktatli’de.</h1>
+          <p class="lead" id="t_hero_lead">
+            Makaron, cupcake, buttercream, tasarım pastalar… 15 yıllık tecrübemizle hem üretim yapıyor hem de her seviyeden katılımcıya
+            uygulamalı eğitim veriyoruz. Küçük gruplar, yoğun pratik ve gerçek “butik” teknikler.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#courses" id="t_hero_btn1"><i class="bi bi-mortarboard"></i> Kursları İncele</a>
+            <a class="btn" href="#gallery" id="t_hero_btn2"><i class="bi bi-images"></i> Çalışmalarımız</a>
+          </div>
+
+          <div class="sep"></div>
+
+          <p class="small" id="t_hero_note">
+            İpucu: Görselleri kendi fotoğraflarınla değiştirmek için <code>/img</code> klasörünü güncellemen yeterli.
+          </p>
+        </div>
+
+        <div class="hero-card" data-aos="zoom-in" data-parallax>
+          <img src="img/hero.svg" alt="Butiktatli butik pasta ve eğitim" loading="eager" />
+          <div class="hero-meta">
+            <div class="pill">
+              <i class="bi bi-people" aria-hidden="true"></i>
+              <div>
+                <strong id="t_pill1_title">Küçük Grup</strong>
+                <span id="t_pill1_sub">maks. 8–12 kişi</span>
+              </div>
+            </div>
+            <div class="pill">
+              <i class="bi bi-award" aria-hidden="true"></i>
+              <div>
+                <strong id="t_pill2_title">Uygulamalı</strong>
+                <span id="t_pill2_sub">yoğun pratik</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" aria-label="Hakkında">
+      <div class="container">
+        <div class="header">
+          <div>
+            <h2 id="t_about_h2">Hakkımızda</h2>
+            <p class="subtitle" id="t_about_sub">
+              Butiktatli, butik pasta ve tatlı üretimini eğitimle buluşturan bir atölyedir. Her tarifin arkasında doğru teknik, doğru ölçü ve bolca pratik var.
+            </p>
+          </div>
+          <div class="badge" id="t_about_badge"><i class="bi bi-heart-fill"></i> 15+ Yıl Tecrübe</div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card about-media" data-aos="fade-right">
+            <img src="img/about.svg" alt="Butiktatli atölye" loading="lazy" />
+          </div>
+
+          <div class="card about-copy" data-aos="fade-left">
+            <p class="lead" style="margin:0;" id="t_about_lead">
+              15 seneyi aşkın deneyimimizle hem butik pasta satışları yapıyor hem de makaron, cupcake, buttercream ve tasarım pasta eğitimleri veriyoruz.
+              Amacımız: tarif ezberletmek değil, tekniği öğretmek.
+            </p>
+
+            <div class="ticks">
+              <div class="tick" id="t_tick1"><i class="bi bi-check2-circle"></i> Gerçek üretim standardında reçeteler ve malzeme bilgisi</div>
+              <div class="tick" id="t_tick2"><i class="bi bi-check2-circle"></i> Şef eşliğinde adım adım uygulama + geri bildirim</div>
+              <div class="tick" id="t_tick3"><i class="bi bi-check2-circle"></i> Dekorasyon, dolgu ve sunum teknikleri</div>
+              <div class="tick" id="t_tick4"><i class="bi bi-check2-circle"></i> Evde ve profesyonel mutfakta uygulanabilir ipuçları</div>
+            </div>
+
+            <div class="sep"></div>
+
+            <a class="btn btn-primary" href="#contact" id="t_about_btn"><i class="bi bi-chat-dots"></i> Bilgi Al</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section id="courses" class="section" aria-label="Kurslar">
+      <div class="container">
+        <div class="header">
+          <div>
+            <h2 id="t_courses_h2">Kurslar</h2>
+            <p class="subtitle" id="t_courses_sub">
+              Seviye fark etmez: temelden ileri düzeye, butik pastacılığın en çok aranan eğitimleri. Programlar örnektir; içerikleri sen düzenleyebilirsin.
+            </p>
+          </div>
+          <div class="badge" id="t_courses_badge"><i class="bi bi-award-fill"></i> Uygulamalı Atölye</div>
+        </div>
+
+        <div class="course-grid">
+          <article class="card course" data-aos="fade-up">
+            <img src="img/course.svg" alt="Makaron kursu" loading="lazy" />
+            <div class="body">
+              <div class="title">
+                <h3 id="t_c1_title">Makaron Masterclass</h3>
+                <span class="price" id="t_c1_price">₺1.999</span>
+              </div>
+              <p id="t_c1_desc">Kabuk dengesi, macaronage, fırın ayarı ve dolgu kremaları. Çatlama/ayak problemi gibi hataları birlikte çözüyoruz.</p>
+              <div class="meta">
+                <span class="chip" id="t_c1_chip1"><i class="bi bi-clock"></i> 1 gün</span>
+                <span class="chip" id="t_c1_chip2"><i class="bi bi-people"></i> 10 kişi</span>
+                <span class="chip" id="t_c1_chip3"><i class="bi bi-gem"></i> Orta-İleri</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card course" data-aos="fade-up" data-aos-delay="60">
+            <img src="img/course.svg" alt="Cupcake kursu" loading="lazy" />
+            <div class="body">
+              <div class="title">
+                <h3 id="t_c2_title">Cupcake & Buttercream</h3>
+                <span class="price" id="t_c2_price">₺2.499</span>
+              </div>
+              <p id="t_c2_desc">Nemli kek bazları, dolgu seçenekleri, buttercream kıvamı ve duy teknikleri. Kutulama ve vitrin sunumu dahil.</p>
+              <div class="meta">
+                <span class="chip" id="t_c2_chip1"><i class="bi bi-clock"></i> 1 gün</span>
+                <span class="chip" id="t_c2_chip2"><i class="bi bi-people"></i> 12 kişi</span>
+                <span class="chip" id="t_c2_chip3"><i class="bi bi-brush"></i> Dekor</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card course" data-aos="fade-up" data-aos-delay="120">
+            <img src="img/course.svg" alt="Butik pasta tasarım kursu" loading="lazy" />
+            <div class="body">
+              <div class="title">
+                <h3 id="t_c3_title">Butik Pasta Tasarım</h3>
+                <span class="price" id="t_c3_price">₺3.499</span>
+              </div>
+              <p id="t_c3_desc">Katlama, ganaj, düzgün kaplama, kesim ve modern dekorlar. Pastanı sıfırdan hazırlayıp “butik” bir finalle çıkıyorsun.</p>
+              <div class="meta">
+                <span class="chip" id="t_c3_chip1"><i class="bi bi-clock"></i> 2 gün</span>
+                <span class="chip" id="t_c3_chip2"><i class="bi bi-people"></i> 8 kişi</span>
+                <span class="chip" id="t_c3_chip3"><i class="bi bi-stars"></i> İleri</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section" aria-label="Galeri">
+      <div class="container">
+        <div class="header">
+          <div>
+            <h2 id="t_gallery_h2">Galeri</h2>
+            <p class="subtitle" id="t_gallery_sub">
+              Eğitimlerden ve üretimlerimizden örnekler. Grid yapıda kaydırmalı galeri + tıklayınca büyüyen lightbox.
+            </p>
+          </div>
+          <div class="badge" id="t_gallery_badge"><i class="bi bi-grid-3x3-gap-fill"></i> Grid + Slider</div>
+        </div>
+
+        <div class="gallery-wrap" data-aos="fade-up">
+          <div class="swiper gallerySwiper" aria-label="Galeri slider">
+            <div class="swiper-wrapper">
+              <!-- 10 items -->
+              
+              <div class="swiper-slide">
+                <a class="gallery-item glightbox" href="img/gallery-01.svg" data-gallery="cakes" data-title="Butiktatli">
+                  <img src="img/gallery-01.svg" alt="Galeri görsel 1" loading="lazy" />
+                  <div class="cap"><span>Butiktatli</span> <i class="bi bi-arrows-angle-expand"></i></div>
+                </a>
+              </div>
+              
+
+              <div class="swiper-slide">
+                <a class="gallery-item glightbox" href="img/gallery-02.svg" data-gallery="cakes" data-title="Butiktatli">
+                  <img src="img/gallery-02.svg" alt="Galeri görsel 2" loading="lazy" />
+                  <div class="cap"><span>Butiktatli</span> <i class="bi bi-arrows-angle-expand"></i></div>
+                </a>
+              </div>
+              
+
+              <div class="swiper-slide">
+                <a class="gallery-item glightbox" href="img/gallery-03.svg" data-gallery="cakes" data-title="Butiktatli">
+                  <img src="img/gallery-03.svg" alt="Galeri görsel 3" loading="lazy" />
+                  <div class="cap"><span>Butiktatli</span> <i class="bi bi-arrows-angle-expand"></i></div>
+                </a>
+              </div>
+              
+
+              <div class="swiper-slide">
+                <a class="gallery-item glightbox" href="img/gallery-04.svg" data-gallery="cakes" data-title="Butiktatli">
+                  <img src="img/gallery-04.svg" alt="Galeri görsel 4" loading="lazy" />
+                  <div class="cap"><span>Butiktatli</span> <i class="bi bi-arrows-angle-expand"></i></div>
+                </a>
+              </div>
+              
+
+              <div class="swiper-slide">
+                <a class="gallery-item glightbox" href="img/gallery-05.svg" data-gallery="cakes" data-title="Butiktatli">
+                  <img src="img/gallery-05.svg" alt="Galeri görsel 5" loading="lazy" />
+                  <div class="cap"><span>Butiktatli</span> <i class="bi bi-arrows-angle-expand"></i></div>
+                </a>
+              </div>
+              
+
+              <div class="swiper-slide">
+                <a class="gallery-item glightbox" href="img/gallery-06.svg" data-gallery="cakes" data-title="Butiktatli">
+                  <img src="img/gallery-06.svg" alt="Galeri görsel 6" loading="lazy" />
+                  <div class="cap"><span>Butiktatli</span> <i class="bi bi-arrows-angle-expand"></i></div>
+                </a>
+              </div>
+              
+
+              <div class="swiper-slide">
+                <a class="gallery-item glightbox" href="img/gallery-07.svg" data-gallery="cakes" data-title="Butiktatli">
+                  <img src="img/gallery-07.svg" alt="Galeri görsel 7" loading="lazy" />
+                  <div class="cap"><span>Butiktatli</span> <i class="bi bi-arrows-angle-expand"></i></div>
+                </a>
+              </div>
+              
+
+              <div class="swiper-slide">
+                <a class="gallery-item glightbox" href="img/gallery-08.svg" data-gallery="cakes" data-title="Butiktatli">
+                  <img src="img/gallery-08.svg" alt="Galeri görsel 8" loading="lazy" />
+                  <div class="cap"><span>Butiktatli</span> <i class="bi bi-arrows-angle-expand"></i></div>
+                </a>
+              </div>
+              
+
+              <div class="swiper-slide">
+                <a class="gallery-item glightbox" href="img/gallery-09.svg" data-gallery="cakes" data-title="Butiktatli">
+                  <img src="img/gallery-09.svg" alt="Galeri görsel 9" loading="lazy" />
+                  <div class="cap"><span>Butiktatli</span> <i class="bi bi-arrows-angle-expand"></i></div>
+                </a>
+              </div>
+              
+
+              <div class="swiper-slide">
+                <a class="gallery-item glightbox" href="img/gallery-10.svg" data-gallery="cakes" data-title="Butiktatli">
+                  <img src="img/gallery-10.svg" alt="Galeri görsel 10" loading="lazy" />
+                  <div class="cap"><span>Butiktatli</span> <i class="bi bi-arrows-angle-expand"></i></div>
+                </a>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="swiper-nav">
+            <div class="small" id="t_gallery_hint">Kaydır: mouse wheel / dokunmatik / oklar</div>
+            <div style="display:flex; gap:10px;">
+              <button class="swiper-btn swiperPrev" type="button" aria-label="Önceki">
+                <i class="bi bi-arrow-left" aria-hidden="true"></i>
+              </button>
+              <button class="swiper-btn swiperNext" type="button" aria-label="Sonraki">
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-label="İletişim">
+      <div class="container">
+        <div class="header">
+          <div>
+            <h2 id="t_contact_h2">İletişim</h2>
+            <p class="subtitle" id="t_contact_sub">
+              Kayıt, fiyat ve program bilgisi için mesaj bırak. (Bu form demo; backend yok. İstersen formu WhatsApp’a yönlendirecek şekilde de ayarlarız.)
+            </p>
+          </div>
+          <div class="badge" id="t_contact_badge"><i class="bi bi-send-fill"></i> Hızlı Geri Dönüş</div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card form" data-aos="fade-right">
+            <form id="contactForm" novalidate>
+              <div class="row">
+                <div class="field">
+                  <label for="name" id="t_label_name">Ad Soyad</label>
+                  <input id="name" name="name" type="text" placeholder="Adınız Soyadınız" autocomplete="name" required>
+                </div>
+                <div class="field">
+                  <label for="email" id="t_label_email">E-posta</label>
+                  <input id="email" name="email" type="email" placeholder="ornek@butiktatli.com" autocomplete="email" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="subject" id="t_label_subject">Konu</label>
+                <input id="subject" name="subject" type="text" placeholder="Kurs bilgisi / satış / randevu">
+              </div>
+
+              <div class="field">
+                <label for="message" id="t_label_message">Mesaj</label>
+                <textarea id="message" name="message" placeholder="Kısaca ne istediğini yaz (ör: Makaron Masterclass için tarih soruyorum)..." required></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit" id="t_contact_btn">
+                <i class="bi bi-send"></i> Mesaj Gönder
+              </button>
+
+              <p class="notice" id="t_contact_notice">
+                SEO: Semantik başlık yapısı, açıklama meta, OG etiketleri ve JSON‑LD yapılandırılmış veri eklidir.
+              </p>
+            </form>
+          </div>
+
+          <aside class="card info" data-aos="fade-left">
+            <div class="box">
+              <strong id="t_info_phone"><i class="bi bi-telephone"></i> Telefon</strong>
+              <span>+90 555 555 55 55</span>
+            </div>
+            <div class="box">
+              <strong id="t_info_email"><i class="bi bi-envelope"></i> E-posta</strong>
+              <span>info@butiktatli.com</span>
+            </div>
+            <div class="box">
+              <strong id="t_info_addr"><i class="bi bi-geo-alt"></i> Konum</strong>
+              <span>İstanbul / TR</span>
+            </div>
+            <div class="map">
+              <img src="img/contact.svg" alt="İletişim görseli" loading="lazy">
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer aria-label="Alt bilgi">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <strong>© <span id="year"></span> <span id="t_footer_brand">Butiktatli</span></strong>
+          <p id="t_footer_p">Butik tatlı satışları ve pastacılık eğitimleri: makaron, cupcake ve tasarım pastalar. Atölyemizde uygulamalı öğren, evinde veya işinde güvenle uygula.</p>
+          <div class="sep"></div>
+          <div class="small" id="t_footer_small">Sorular için WhatsApp’tan yazabilir veya formu kullanabilirsin.</div>
+        </div>
+
+        <div>
+          <div class="small" style="margin-bottom:10px;" id="t_footer_social">Sosyal</div>
+          <div class="socials" aria-label="Sosyal linkler">
+            <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://wa.me/905555555555" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Back to top -->
+  <button id="toTop" class="to-top" type="button" aria-label="Yukarı çık">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Toast -->
+  <div id="toast" style="position:fixed; left:50%; bottom:86px; transform:translate(-50%,12px); opacity:0; pointer-events:none; transition:opacity .25s ease, transform .25s ease; z-index:2600;">
+    <div style="display:flex; align-items:center; gap:10px; padding:12px 14px; border-radius:999px; border:1px solid rgba(15,23,42,.12); background:rgba(255,255,255,.82); box-shadow:0 18px 44px rgba(15,23,42,.12); backdrop-filter: blur(14px);">
+      <span id="toastText" style="font-weight:900; font-size:13px; color:rgba(15,23,42,.85);">Lorem</span>
+      <button id="toastClose" type="button" aria-label="Kapat" style="border:none; background:transparent; cursor:pointer; padding:6px; border-radius:999px;">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Vendor JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <!-- App JS -->
+  <script src="js/main.js"></script>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
