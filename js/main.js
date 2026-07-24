@@ -435,15 +435,16 @@
 
   if (window.Swiper) {
     new Swiper(".gallerySwiper", {
-      slidesPerView: 1.2,
-      spaceBetween: 14,
-      grid: { rows: 2, fill: "row" },
+      slidesPerView: 1,
+      spaceBetween: 12,
+      loop: true,
       breakpoints: {
-        720:  { slidesPerView: 2.4, spaceBetween: 16, grid: { rows: 2 } },
-        980:  { slidesPerView: 3.2, spaceBetween: 16, grid: { rows: 2 } },
-        1180: { slidesPerView: 3.6, spaceBetween: 18, grid: { rows: 2 } }
+        600:  { slidesPerView: 1, spaceBetween: 12 },
+        768:  { slidesPerView: 2, spaceBetween: 14 },
+        1024: { slidesPerView: 3, spaceBetween: 16 }
       },
-      navigation: { nextEl: ".swiperNext", prevEl: ".swiperPrev" }
+      navigation: { nextEl: ".swiperNext", prevEl: ".swiperPrev" },
+      a11y: { prevSlideMessage: "Önceki", nextSlideMessage: "Sonraki" }
     });
   }
 
