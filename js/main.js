@@ -438,6 +438,11 @@
       slidesPerView: 1,
       spaceBetween: 12,
       loop: true,
+      watchOverflow: true,
+      observer: true,
+      observeParents: true,
+      /* Yatay scroll sorununu önlemek için */
+      touchStartPreventDefault: false,
       breakpoints: {
         600:  { slidesPerView: 1, spaceBetween: 12 },
         768:  { slidesPerView: 2, spaceBetween: 14 },
