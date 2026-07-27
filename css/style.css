@@ -435,7 +435,7 @@ h1 {
 .about-media:hover img { transform: scale(1.02); }
 .about-copy { padding: 24px; }
 .about-copy .ticks { margin: 18px 0 0; display: grid; gap: 12px; }
-.tick { display: flex; align-items: flex-start; gap: 10px; color: rgba(26, 8, 16, .82); font-size: 14.5px; line-height: 1.55; }
+.tick { display: flex; align-items: flex-start; gap: 10px; color: rgba(26, 8, 16, 0.6); font-size: 14.5px; line-height: 1.55; }
 .tick i { margin-top: 1px; color: var(--accent); font-size: 17px; flex-shrink: 0; }
 
 /* =========================================================
