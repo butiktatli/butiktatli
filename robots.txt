@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://butiktatli.com/sitemap.xml
