@@ -731,6 +731,40 @@ input::placeholder, textarea::placeholder { color: var(--muted); }
 .map iframe { width: 100%; height: 200px; border: 0; display: block; }
 
 /* =========================================================
+   PASTA ÇEŞİTLERİ (SEO)
+   ========================================================= */
+.categories-wrap {
+  margin-top: 32px;
+  padding: 24px 28px;
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--stroke);
+}
+.categories-wrap h3 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  margin-bottom: 14px;
+}
+.categories-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.categories-tags span {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--bg);
+  border: 1px solid var(--stroke);
+  border-radius: 999px;
+  padding: 4px 13px;
+  white-space: nowrap;
+}
+
+/* =========================================================
    FOOTER
    ========================================================= */
 footer { padding: 48px 0 60px; }
