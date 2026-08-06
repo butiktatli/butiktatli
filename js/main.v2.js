@@ -97,6 +97,7 @@
       c5_chip2:       "1–4 kişi",
       c5_chip3:       "Orta–ileri",
       course_own:     "Eğitimlerde yapılan ürünler sizin olur.",
+      categories_title: "Sipariş Aldığımız Pasta Çeşitleri",
       satis_tag:      "Pasta Siparişi",
       satis_h2:       "Özel tasarım pasta siparişi.",
       satis_sub:      "Doğum günü, düğün, nişan veya özel gün için sipariş bazlı butik pasta hazırlıyoruz. WhatsApp'tan fotoğraf ve detaylarınızı paylaşın, size özel teklif hazırlayalım.",
@@ -246,6 +247,7 @@
       c5_chip2:       "1–4 people",
       c5_chip3:       "Intermediate+",
       course_own:     "Everything you make in class is yours to keep.",
+      categories_title: "Cake Varieties We Make to Order",
       satis_tag:      "Order a Cake",
       satis_h2:       "Custom boutique cake orders.",
       satis_sub:      "We make custom boutique cakes for birthdays, weddings, engagements and special occasions. Share your idea on WhatsApp and we'll prepare a personalised quote.",
@@ -427,7 +429,8 @@
     set("t_c5_chip3",  L.c5_chip3);
     $$(".t_course_own").forEach(el => { el.textContent = L.course_own; });
 
-    set("t_satis_tag",      L.satis_tag);
+    set("t_categories_title", L.categories_title);
+    set("t_satis_tag",        L.satis_tag);
     set("t_satis_badge",    L.satis_badge);
     set("t_order_title",    L.order_title);
     set("t_order_desc",     L.order_desc);
@@ -723,9 +726,7 @@
     if (!/^\S+@\S+\.\S+$/.test(email)) return showToast(T.email || "Geçerli bir e-posta girin.");
     if (msg.length < 10)               return showToast(T.msg   || "Mesaj çok kısa.");
 
-    const replytoField = document.getElementById("replytoField");
     const subjectField = document.getElementById("subjectField");
-    if (replytoField) replytoField.value = email;
     if (subjectField) {
       const sub = String(fd.get("subject") || "").trim();
       subjectField.value = sub ? `Butiktatli: ${sub}` : "Butiktatli İletişim Formu";
@@ -736,12 +737,12 @@
 
     try {
       const res = await fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
-      if (res.ok) {
+      const data = await res.json().catch(() => ({}));
+      if (data.success) {
         form.reset();
         showToast(T.ok || "✓ Mesajınız iletildi!");
       } else {
-        const data = await res.json().catch(() => ({}));
-        showToast(data?.errors?.[0]?.message || "Gönderim başarısız, lütfen tekrar deneyin.");
+        showToast(data.message || "Gönderim başarısız, lütfen tekrar deneyin.");
       }
     } catch { showToast("Bağlantı hatası. İnternet bağlantınızı kontrol edin."); }
     finally { if (btn) { btn.disabled = false; btn.style.opacity = ""; } }
@@ -776,6 +777,10 @@
       </div>`;
     }).join("");
   }
+
+  document.querySelectorAll(".video-preview").forEach(v => {
+    v.addEventListener("loadedmetadata", () => { v.currentTime = 2; });
+  });
 
   let openVideoId = null;
 
