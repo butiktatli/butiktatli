@@ -497,7 +497,7 @@
 
     /* Mobile submenu trigger label */
     const mst = $('.mobile-submenu-trigger');
-    if (mst) mst.innerHTML = (lang === 'en' ? 'Cake Types' : 'Pasta Çeşitleri') + ' <i class="bi bi-chevron-down"></i>';
+    if (mst) mst.innerHTML = (lang === 'en' ? 'Order a Cake' : 'Pasta Siparişi') + ' <i class="bi bi-chevron-down"></i>';
 
     /* Mobile submenu items */
     $$('.mobile-submenu-list a[href]').forEach(a => {
@@ -640,9 +640,12 @@
   applyLang(getLang());
 
   /* =================== Mobile menu =================== */
+  let menuOpenScrollY = 0;
   const setMobileOpen = (open) => {
     if (!mobilePanel || !mobileBtn) return;
     mobilePanel.style.display = open ? "block" : "none";
+    document.body.style.overflow = open ? "hidden" : "";
+    if (open) menuOpenScrollY = window.scrollY;
     mobileBtn.setAttribute("aria-expanded", String(open));
     mobileBtn.innerHTML = open
       ? '<i class="bi bi-x-lg" aria-hidden="true"></i>'
@@ -650,7 +653,11 @@
   };
   mobileBtn?.addEventListener("click", () => setMobileOpen(mobileBtn.getAttribute("aria-expanded") !== "true"));
   $$("#mobilePanel a").forEach(a => a.addEventListener("click", () => setMobileOpen(false)));
-  window.addEventListener("scroll", () => { if (mobileBtn?.getAttribute("aria-expanded") === "true") setMobileOpen(false); }, { passive: true });
+  window.addEventListener("scroll", () => {
+    if (mobileBtn?.getAttribute("aria-expanded") === "true" && window.scrollY > menuOpenScrollY + 150) {
+      setMobileOpen(false);
+    }
+  }, { passive: true });
 
 
   /* Mobil submenu toggle */
