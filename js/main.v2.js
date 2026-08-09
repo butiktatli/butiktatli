@@ -23,8 +23,8 @@
   /* ========================= i18n ========================= */
   const I18N = {
     tr: {
-      title:          "Butiktatli | Butik Pasta Siparişi & Pastacılık Eğitimleri — İstanbul",
-      desc:           "İstanbul'da butik pasta siparişi ve tatlı satışı. Makaron, cupcake, özel tasarım pastalar. Profesyonel pastacılık eğitimleri. 20+ yıl tecrübe. WhatsApp: +90 535 746 63 31",
+      title:          "Butik Pasta Siparişi İstanbul | Pastacılık Kursu | Butiktatli",
+      desc:           "İstanbul'da butik pasta siparişi ve özel tasarım pastacılık. Doğum günü, nişan pastaları, makaron, cupcake. Profesyonel pastacılık kursu. 20+ yıl tecrübe.",
       ogDesc:         "İstanbul'da butik pasta siparişi, tatlı satışı ve profesyonel pastacılık eğitimleri.",
       skip:           "İçeriğe atla",
       nav_about:      "Hakkında",
@@ -41,7 +41,7 @@
       m_contact:      "İletişim",
       m_cta:          "WhatsApp'tan Sipariş Ver",
       kicker:         "Butik pastalar • Özel sipariş • Profesyonel eğitimler",
-      h1:             "Butik pastacılıkta tat ve sanat bir arada.",
+      h1:             "İstanbul'da butik pasta siparişi ve pastacılık eğitimi.",
       hero_lead:      "Makaron, cupcake, buttercream, özel tasarım pastalar… 20+ yıllık tecrübemizle hem sipariş üretimi yapıyor hem de her seviyeye uygulamalı eğitim veriyoruz.",
       hero_btn1:      "Sipariş Ver",
       hero_btn2:      "Eğitimleri Gör",
@@ -98,6 +98,30 @@
       c5_chip3:       "Orta–ileri",
       course_own:     "Eğitimlerde yapılan ürünler sizin olur.",
       categories_title: "Sipariş Aldığımız Pasta Çeşitleri",
+      allTypes: "Tüm Çeşitler",
+      catNames: {
+        'anneler-gunu-pastasi.html': 'Anneler Günü Pastası',
+        'dogum-gunu-pastasi.html':   'Doğum Günü Pastası',
+        'nisan-pastasi.html':        'Söz / Nişan Pastası',
+        'cupcake.html':              'Cupcake',
+        'makaron.html':              'Butik Makaron',
+        'cocuk-pastasi.html':        'Çocuk Pastaları',
+        'cicekli-pasta.html':        'Çiçekli Pastalar',
+        'kremali-pasta.html':        'Kremalı Pastalar',
+        'resim-baski-pasta.html':    'Resim Baskılı Pastalar',
+        'sevgililer-gunu-pastasi.html': 'Sevgililer Günü Pastaları',
+        'taraftar-spor-pastasi.html':'Taraftar ve Spor Pastaları',
+        'vegan-pasta.html':          'Vegan Pastalar',
+        'cakepops.html':             'Cake Pops'
+      },
+      tags: [
+        'Babalar Günü Pastası','Harf Pasta','Hoşgeldin Bebek Pastası',
+        'Baby Shower Pastası','1 Yaş Pastası','Diş Buğdayı',
+        'Doktor Pastası','Yetişkin Pastaları','Naked Pasta',
+        '3D Elbise Pasta','Beze / Mereng','Kurabiye',
+        'Çizgi Film Karakterleri Pastası','Figürlü Pasta',
+        'Düğün Organizasyon Pastası','Özel Tasarım Pasta İstanbul'
+      ],
       satis_tag:      "Pasta Siparişi",
       satis_h2:       "Özel tasarım pasta siparişi.",
       satis_sub:      "Doğum günü, düğün, nişan veya özel gün için sipariş bazlı butik pasta hazırlıyoruz. WhatsApp'tan fotoğraf ve detaylarınızı paylaşın, size özel teklif hazırlayalım.",
@@ -173,8 +197,8 @@
       toast_ok:       "✓ Mesajınız iletildi! En kısa sürede dönüş yapacağız."
     },
     en: {
-      title:          "Butiktatli | Boutique Cake Orders & Pastry Classes — Istanbul",
-      desc:           "Boutique cake orders and dessert sales in Istanbul. Macarons, cupcakes, custom-design cakes. Professional pastry classes. 20+ years experience.",
+      title:          "Boutique Cake Orders Istanbul | Pastry Classes | Butiktatli",
+      desc:           "Boutique cake orders and custom-design cakes in Istanbul. Birthday, engagement cakes, macarons, cupcakes. Professional pastry classes. 20+ years experience.",
       ogDesc:         "Boutique cake orders, dessert sales and professional pastry classes in Istanbul.",
       skip:           "Skip to content",
       nav_about:      "About",
@@ -191,7 +215,7 @@
       m_contact:      "Contact",
       m_cta:          "Order via WhatsApp",
       kicker:         "Boutique cakes • Custom orders • Professional classes",
-      h1:             "Where taste meets art in boutique pastry.",
+      h1:             "Boutique cake orders and pastry classes in Istanbul.",
       hero_lead:      "Macarons, cupcakes, buttercream, custom cakes… With 20+ years of experience, we take custom orders and teach hands-on classes for every level.",
       hero_btn1:      "Order Now",
       hero_btn2:      "Explore Classes",
@@ -248,6 +272,30 @@
       c5_chip3:       "Intermediate+",
       course_own:     "Everything you make in class is yours to keep.",
       categories_title: "Cake Varieties We Make to Order",
+      allTypes: "All Types",
+      catNames: {
+        'anneler-gunu-pastasi.html': "Mother's Day Cake",
+        'dogum-gunu-pastasi.html':   'Birthday Cake',
+        'nisan-pastasi.html':        'Engagement Cake',
+        'cupcake.html':              'Cupcake',
+        'makaron.html':              'Boutique Macarons',
+        'cocuk-pastasi.html':        "Kids' Cakes",
+        'cicekli-pasta.html':        'Floral Cakes',
+        'kremali-pasta.html':        'Cream Cakes',
+        'resim-baski-pasta.html':    'Photo Print Cakes',
+        'sevgililer-gunu-pastasi.html': "Valentine's Day Cakes",
+        'taraftar-spor-pastasi.html':'Fan & Sports Cakes',
+        'vegan-pasta.html':          'Vegan Cakes',
+        'cakepops.html':             'Cake Pops'
+      },
+      tags: [
+        "Father's Day Cake",'Letter Cake','Welcome Baby Cake',
+        'Baby Shower Cake','1st Birthday Cake','First Tooth Cake',
+        'Doctor Cake','Adult Cakes','Naked Cake',
+        '3D Dress Cake','Meringue','Cookies',
+        'Cartoon Character Cake','Figurine Cake',
+        'Wedding Cake','Custom Design Cake Istanbul'
+      ],
       satis_tag:      "Order a Cake",
       satis_h2:       "Custom boutique cake orders.",
       satis_sub:      "We make custom boutique cakes for birthdays, weddings, engagements and special occasions. Share your idea on WhatsApp and we'll prepare a personalised quote.",
@@ -370,9 +418,9 @@
     const h1el = document.getElementById("t_h1");
     if (h1el) {
       if (lang === "tr") {
-        h1el.innerHTML = 'Butik pastacılıkta <span class="gradient-text">tat ve sanat</span> bir arada.';
+        h1el.innerHTML = 'İstanbul\'da <span class="gradient-text">butik pasta</span> siparişi ve pastacılık eğitimi.';
       } else {
-        h1el.innerHTML = 'Where taste meets <span class="gradient-text">art</span> in boutique pastry.';
+        h1el.innerHTML = 'Boutique <span class="gradient-text">cake orders</span> and pastry classes in Istanbul.';
       }
     }
     set("t_hero_lead", L.hero_lead);
@@ -435,6 +483,41 @@
     set("t_order_title",    L.order_title);
     set("t_order_desc",     L.order_desc);
     set("t_order_btn_text", L.order_btn_text);
+
+    /* Dropdown category items */
+    $$('#navDropdownMenu a[href]').forEach(a => {
+      const href = a.getAttribute('href');
+      const icon = a.querySelector('i');
+      if (icon && L.catNames && L.catNames[href]) {
+        a.innerHTML = icon.outerHTML + ' ' + L.catNames[href];
+      } else if (href === '#pasta-cesitleri' && icon) {
+        a.innerHTML = icon.outerHTML + ' ' + L.allTypes;
+      }
+    });
+
+    /* Mobile submenu items */
+    $$('.mobile-submenu-list a[href]').forEach(a => {
+      const href = a.getAttribute('href');
+      const icon = a.querySelector('i');
+      if (icon && L.catNames && L.catNames[href]) {
+        a.innerHTML = icon.outerHTML + ' ' + L.catNames[href];
+      }
+    });
+
+    /* Category grid cards */
+    $$('.cat-menu-card[href]').forEach(a => {
+      const nameSpan = a.querySelector('.cat-menu-name');
+      if (nameSpan && L.catNames && L.catNames[a.getAttribute('href')]) {
+        nameSpan.textContent = L.catNames[a.getAttribute('href')];
+      }
+    });
+
+    /* Category tags */
+    if (L.tags) {
+      $$('.categories-tags span').forEach((span, i) => {
+        if (L.tags[i]) span.textContent = L.tags[i];
+      });
+    }
 
     set("t_gallery_tag",        L.gallery_tag);
     set("t_gallery_badge_text", L.gallery_badge);
@@ -539,7 +622,7 @@
   const getLang = () => {
     const saved = localStorage.getItem("butiktatli_lang");
     if (saved === "tr" || saved === "en") return saved;
-    return (navigator.language || "").toLowerCase().startsWith("tr") ? "tr" : "en";
+    return "tr";
   };
   const setLang = (lang) => { localStorage.setItem("butiktatli_lang", lang); applyLang(lang); };
 
@@ -561,6 +644,15 @@
   };
   mobileBtn?.addEventListener("click", () => setMobileOpen(mobileBtn.getAttribute("aria-expanded") !== "true"));
   $$("#mobilePanel a").forEach(a => a.addEventListener("click", () => setMobileOpen(false)));
+
+
+  /* Mobil submenu toggle */
+  const subTrigger = $(".mobile-submenu-trigger");
+  const subList    = $(".mobile-submenu-list");
+  subTrigger?.addEventListener("click", () => {
+    const open = subList.classList.toggle("open");
+    subTrigger.setAttribute("aria-expanded", String(open));
+  });
 
   /* ================ Smooth scroll + offset ================ */
   const scrollToHash = (hash) => {
@@ -620,7 +712,16 @@
   window.addEventListener("scroll", () => { if (!ticking) { requestAnimationFrame(() => { onScroll(); ticking = false; }); ticking = true; } }, { passive: true });
   onScroll();
   toTop?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-  window.addEventListener("load", () => { if (window.location.hash) setTimeout(() => scrollToHash(window.location.hash), 60); });
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.addEventListener("load", () => {
+    const navType = performance.getEntriesByType('navigation')[0]?.type;
+    if (navType === 'reload') {
+      window.scrollTo(0, 0);
+      setTimeout(() => window.scrollTo(0, 0), 50);
+      return;
+    }
+    if (window.location.hash) setTimeout(() => scrollToHash(window.location.hash), 60);
+  });
 
   /* =================== Vendor inits =================== */
   if (window.AOS) {
@@ -770,7 +871,7 @@
         </div>
         <div class="video-expand" id="ve${n}">
           <div class="video-embed-wrap">
-            <video id="vplayer${n}" controls controlsList="nodownload" style="width:100%;height:100%;border-radius:16px;background:#000;" src="videos/${f}"></video>
+            <video id="vplayer${n}" controls controlsList="nodownload" muted style="width:100%;height:100%;border-radius:16px;background:#000;" src="videos/${f}"></video>
           </div>
           <button class="video-close" onclick="closeVideo(${n})" aria-label="Kapat"><i class="bi bi-x-lg"></i> Kapat</button>
         </div>
@@ -789,6 +890,7 @@
     const card   = document.getElementById(`vc${id}`);
     const player = document.getElementById(`vplayer${id}`);
     if (!card || !player) return;
+    player.muted = true;
     card.classList.add("is-open");
     openVideoId = id;
     setTimeout(() => { card.scrollIntoView({ behavior: "smooth", block: "start" }); player.play(); }, 80);
