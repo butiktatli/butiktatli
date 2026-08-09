@@ -27,14 +27,14 @@
       desc:           "İstanbul'da butik pasta siparişi ve özel tasarım pastacılık. Doğum günü, nişan pastaları, makaron, cupcake. Profesyonel pastacılık kursu. 20+ yıl tecrübe.",
       ogDesc:         "İstanbul'da butik pasta siparişi, tatlı satışı ve profesyonel pastacılık eğitimleri.",
       skip:           "İçeriğe atla",
-      nav_about:      "Hakkında",
+      nav_about:      "Hakkımızda",
       nav_courses:    "Eğitimler",
       nav_satis:      "Pasta Siparişi",
       nav_gallery:    "Galeri",
       nav_contact:    "İletişim",
       cta_primary:    "Sipariş Ver",
       cta_secondary:  "Eğitimler",
-      m_about:        "Hakkında",
+      m_about:        "Hakkımızda",
       m_courses:      "Eğitimler",
       m_satis:        "Pasta Siparişi",
       m_gallery:      "Galeri",
@@ -185,7 +185,7 @@
       rev1_text:      "Zeynep hanım inanılmaz yetenekli, pasta tam istediğimiz gibi oldu. İç lezzeti çok güzeldi herkes bayıldı. Oğlumun ilk doğum günü için kesinlikle mükemmel bir seçimdi, partinin yıldızı oldu diyebilirim. Tekrardan çok teşekkürler, ellerinize sağlık ♥️",
       rev2_text:      "Zeynep hocamdan pastacılık kursu eğitimi aldım, memnuniyetimi anlatmaya kelimeler yetmez. İşini çok seven ve hakkıyla yapan biri; öğrettiği tariflerle lezzetli ve kaliteli pastalar, kekler yapabiliyoruz. Ne yaptıysak herkes bayılarak yedi 😍 İyi ki yollarımız kesişmiş canım Zeynep hocam 🌺",
       rev3_text:      "Oğlumuzun doğum günü için şahane bir pasta hazırladı Zeynep Hanım, çok teşekkür ediyoruz. Glutensiz, şekersiz ve son derece lezzetli. Emeğinize sağlık 🌸",
-      footer_link1:   "Hakkında",
+      footer_link1:   "Hakkımızda",
       footer_link2:   "Eğitimler",
       footer_link3:   "Pasta Siparişi",
       footer_link4:   "Galeri",
@@ -675,7 +675,25 @@
     const el = document.getElementById(id);
     if (!el) return;
     const navH = navbar?.offsetHeight ?? 74;
-    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - navH - 20, behavior: "smooth" });
+    const targetY = el.getBoundingClientRect().top + window.scrollY - navH - 20;
+    const startY = window.scrollY;
+    const dist = targetY - startY;
+    if (Math.abs(dist) < 2) return;
+    const duration = 680;
+    const t0 = performance.now();
+    const step = (now) => {
+      const p = Math.min((now - t0) / duration, 1);
+      const e = p < 0.5 ? 2 * p * p : -1 + (4 - 2 * p) * p;
+      window.scrollTo(0, startY + dist * e);
+      if (p < 1) { requestAnimationFrame(step); }
+      else {
+        el.classList.remove('section-arrive');
+        void el.offsetWidth;
+        el.classList.add('section-arrive');
+        setTimeout(() => el.classList.remove('section-arrive'), 900);
+      }
+    };
+    requestAnimationFrame(step);
   };
 
   $$('a[href^="#"]').forEach(a => {
@@ -695,22 +713,14 @@
 
   const setActive = (id) => allLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === `#${id}`));
 
-  new IntersectionObserver(
-    (entries) => {
-      const vis = entries.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (vis?.target?.id) setActive(vis.target.id);
-    },
-    { threshold: [0.15, 0.30, 0.50] }
-  ).observe !== undefined && (() => {
-    const obs = new IntersectionObserver(
-      (entries) => {
-        const vis = entries.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (vis?.target?.id) setActive(vis.target.id);
-      },
-      { threshold: [0.15, 0.30, 0.50] }
-    );
-    sections.forEach(s => obs.observe(s));
-  })();
+  const scrollSpy = () => {
+    const y = window.scrollY + 90;
+    let active = sections[0]?.id || '';
+    sections.forEach(s => { if (s.offsetTop <= y) active = s.id; });
+    setActive(active);
+  };
+  window.addEventListener('scroll', scrollSpy, { passive: true });
+  scrollSpy();
 
   /* ============ Navbar show/hide + back-to-top ============ */
   let lastY = window.scrollY, ticking = false;
@@ -736,6 +746,30 @@
     }
     if (window.location.hash) setTimeout(() => scrollToHash(window.location.hash), 60);
   });
+
+  /* =================== Stat counter =================== */
+  const runCounters = () => {
+    $$('.hero-stats .stat-item strong[data-count]').forEach(el => {
+      const end = +el.dataset.count;
+      const suffix = el.dataset.suffix || '';
+      const duration = 1400;
+      const startTime = performance.now();
+      const tick = (now) => {
+        const p = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(eased * end) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+  };
+  const statsEl = $('.hero-stats');
+  if (statsEl) {
+    let counted = false;
+    new IntersectionObserver(([e]) => {
+      if (e.isIntersecting && !counted) { counted = true; runCounters(); }
+    }, { threshold: 0.5 }).observe(statsEl);
+  }
 
   /* =================== Vendor inits =================== */
   if (window.AOS) {
