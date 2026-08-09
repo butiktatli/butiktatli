@@ -6,7 +6,7 @@ var qsa=function(s){return Array.from(document.querySelectorAll(s));};
 
 var C={
   tr:{
-    about:'Hakkında',
+    about:'Hakkımızda',
     courses:'Eğitimler',
     cats:'Pasta Siparişi',
     gallery:'Galeri',
