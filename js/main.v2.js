@@ -490,10 +490,14 @@
       const icon = a.querySelector('i');
       if (icon && L.catNames && L.catNames[href]) {
         a.innerHTML = icon.outerHTML + ' ' + L.catNames[href];
-      } else if (href === '#pasta-cesitleri' && icon) {
+      } else if (href === '#satis' && icon) {
         a.innerHTML = icon.outerHTML + ' ' + L.allTypes;
       }
     });
+
+    /* Mobile submenu trigger label */
+    const mst = $('.mobile-submenu-trigger');
+    if (mst) mst.innerHTML = (lang === 'en' ? 'Cake Types' : 'Pasta Çeşitleri') + ' <i class="bi bi-chevron-down"></i>';
 
     /* Mobile submenu items */
     $$('.mobile-submenu-list a[href]').forEach(a => {
@@ -501,6 +505,8 @@
       const icon = a.querySelector('i');
       if (icon && L.catNames && L.catNames[href]) {
         a.innerHTML = icon.outerHTML + ' ' + L.catNames[href];
+      } else if (href === '#satis' && icon) {
+        a.innerHTML = icon.outerHTML + ' ' + L.allTypes;
       }
     });
 
@@ -644,6 +650,7 @@
   };
   mobileBtn?.addEventListener("click", () => setMobileOpen(mobileBtn.getAttribute("aria-expanded") !== "true"));
   $$("#mobilePanel a").forEach(a => a.addEventListener("click", () => setMobileOpen(false)));
+  window.addEventListener("scroll", () => { if (mobileBtn?.getAttribute("aria-expanded") === "true") setMobileOpen(false); }, { passive: true });
 
 
   /* Mobil submenu toggle */
