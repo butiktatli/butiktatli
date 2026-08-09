@@ -1,32 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://butiktatli.com/</loc>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-</url>
-<url>
-<loc>https://butiktatli.com/#about</loc>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://butiktatli.com/#courses</loc>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://butiktatli.com/#satis</loc>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://butiktatli.com/#gallery</loc>
-<changefreq>weekly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://butiktatli.com/#contact</loc>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-</url>
+  <url>
+    <loc>https://butiktatli.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url><loc>https://butiktatli.com/anneler-gunu-pastasi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://butiktatli.com/dogum-gunu-pastasi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://butiktatli.com/nisan-pastasi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://butiktatli.com/cupcake.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://butiktatli.com/makaron.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://butiktatli.com/cocuk-pastasi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://butiktatli.com/cicekli-pasta.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://butiktatli.com/kremali-pasta.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://butiktatli.com/resim-baski-pasta.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://butiktatli.com/sevgililer-gunu-pastasi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://butiktatli.com/taraftar-spor-pastasi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://butiktatli.com/vegan-pasta.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://butiktatli.com/cakepops.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
