@@ -8,7 +8,7 @@ var C={
   tr:{
     about:'Hakkında',
     courses:'Eğitimler',
-    cats:'Pasta Çeşitleri',
+    cats:'Pasta Siparişi',
     gallery:'Galeri',
     reviews:'Yorumlar',
     contact:'İletişim',
@@ -39,7 +39,7 @@ var C={
   en:{
     about:'About',
     courses:'Classes',
-    cats:'Cake Types',
+    cats:'Order a Cake',
     gallery:'Gallery',
     reviews:'Reviews',
     contact:'Contact',
