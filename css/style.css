@@ -68,6 +68,13 @@ img { max-width: 100%; height: auto; display: block; }
   50%      { transform: translateY(-40px) scale(1.06); }
 }
 
+@keyframes sectionArrive {
+  0%   { box-shadow: 0 0 0 0 rgba(232, 67, 123, 0.18); }
+  40%  { box-shadow: 0 0 0 10px rgba(232, 67, 123, 0.06); }
+  100% { box-shadow: 0 0 0 0 rgba(232, 67, 123, 0); }
+}
+.section-arrive { animation: sectionArrive 0.85s ease-out; }
+
 /* =========================================================
    SKIP LINK
    ========================================================= */
