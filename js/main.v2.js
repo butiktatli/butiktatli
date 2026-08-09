@@ -623,6 +623,11 @@
     $("#langEN_m")?.classList.toggle("active", !isTR);
 
     applyLang._toast = { name: L.toast_name, email: L.toast_email, msg: L.toast_msg, ok: L.toast_ok };
+
+    /* Firefox reflow fix: dil değişince navbar gizlenmesini önle */
+    navbar?.classList.remove("is-hidden");
+    const _lastY = window.scrollY;
+    setTimeout(() => { lastY = _lastY; }, 150);
   };
 
   const getLang = () => {
