@@ -96,6 +96,18 @@
       c5_chip1:       "1 gün",
       c5_chip2:       "1–4 kişi",
       c5_chip3:       "Orta–ileri",
+      c6_register:    "Kayıt Ol",
+      c6_title:       "Sütlü Tatlılar",
+      c6_desc:        "Muhallebi, kazandibi, sütlaç, trileçe, supangle, profiterol ve tavuk göğsü başta olmak üzere sütlü tatlıların temel tekniklerini birlikte yapıyor, tattırıyoruz. Kıvam kontrolü, profesyonel sunum ve porsiyonlama da eğitim kapsamında. Evde yapmak isteyenler için de satış amaçlı üretim hedefleyenler için de uygundur.",
+      c6_chip1:       "1 gün",
+      c6_chip2:       "1–4 kişi",
+      c6_chip3:       "Her seviye",
+      c7_register:    "Kayıt Ol",
+      c7_title:       "Kurabiye Atölyesi",
+      c7_desc:        "Pastane kurabiyeleri için doğru hamur kıvamı, şekillendirme, pişirme süreleri ve dekorasyon tekniklerini uygulamalı öğreniyoruz. Klasik, tuzlu, çikolatalı, dolgulu ve dekoratif kurabiye çeşitleri kapsama dahil. Tarif ezberletmek değil; profesyonel üretim bilgisi ve çalışma düzeni kazandırmak hedefimiz.",
+      c7_chip1:       "1 gün",
+      c7_chip2:       "1–4 kişi",
+      c7_chip3:       "Her seviye",
       course_own:     "Eğitimlerde yapılan ürünler sizin olur.",
       categories_title: "Sipariş Aldığımız Pasta Çeşitleri",
       allTypes: "Tüm Çeşitler",
@@ -270,6 +282,18 @@
       c5_chip1:       "1 day",
       c5_chip2:       "1–4 people",
       c5_chip3:       "Intermediate+",
+      c6_register:    "Enroll",
+      c6_title:       "Milk-Based Desserts",
+      c6_desc:        "Muhallebi, kazandibi, baked rice pudding, trileçe, supangle, profiterol and tavuk göğsü — we make and taste each dessert together in the studio. Covers texture control, professional plating and portioning. Suitable for home bakers and those aiming for commercial production alike.",
+      c6_chip1:       "1 day",
+      c6_chip2:       "1–4 people",
+      c6_chip3:       "All levels",
+      c7_register:    "Enroll",
+      c7_title:       "Cookie Workshop",
+      c7_desc:        "We cover dough texture, shaping, baking times and decoration techniques for professional-level pastry shop cookies — classic, salted, chocolate, filled and decorative varieties. The goal isn't just recipes: it's building the production knowledge and discipline of a professional baker.",
+      c7_chip1:       "1 day",
+      c7_chip2:       "1–4 people",
+      c7_chip3:       "All levels",
       course_own:     "Everything you make in class is yours to keep.",
       categories_title: "Cake Varieties We Make to Order",
       allTypes: "All Types",
@@ -475,6 +499,18 @@
     set("t_c5_chip1",  L.c5_chip1);
     set("t_c5_chip2",  L.c5_chip2);
     set("t_c5_chip3",  L.c5_chip3);
+    set("t_c6_register", L.c6_register);
+    set("t_c6_title",  L.c6_title);
+    set("t_c6_desc",   L.c6_desc);
+    set("t_c6_chip1",  L.c6_chip1);
+    set("t_c6_chip2",  L.c6_chip2);
+    set("t_c6_chip3",  L.c6_chip3);
+    set("t_c7_register", L.c7_register);
+    set("t_c7_title",  L.c7_title);
+    set("t_c7_desc",   L.c7_desc);
+    set("t_c7_chip1",  L.c7_chip1);
+    set("t_c7_chip2",  L.c7_chip2);
+    set("t_c7_chip3",  L.c7_chip3);
     $$(".t_course_own").forEach(el => { el.textContent = L.course_own; });
 
     set("t_categories_title", L.categories_title);
@@ -799,7 +835,7 @@
     const galleryWrapper = document.getElementById("galleryWrapper");
     if (galleryWrapper && typeof EDU_IMAGES !== "undefined") {
       galleryWrapper.innerHTML = EDU_IMAGES.map((f, i) =>
-        `<div class="swiper-slide"><a class="gallery-item glightbox" href="img/${f}" data-gallery="edu" data-title="Butiktatli Pastacılık Eğitimi"><img src="img/${f}" alt="Butiktatli pastacılık eğitimi atölyesi ${i + 1}" loading="lazy" /></a></div>`
+        `<div class="swiper-slide"><a class="gallery-item glightbox" href="img/${f}" data-gallery="edu" data-title="Butiktatli Pastacılık Eğitimi"><img src="img/${f}" alt="Butiktatli pastacılık eğitimi atölyesi ${i + 1}" loading="lazy" /><div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div></a></div>`
       ).join("");
     }
 
@@ -957,5 +993,123 @@
     card.classList.remove("is-open");
     if (openVideoId === id) openVideoId = null;
   };
+
+  /* =================== Scroll progress ring =================== */
+  const scrollRing     = $("#scrollRing");
+  const scrollRingFill = $("#scrollRingFill");
+  if (scrollRing && scrollRingFill) {
+    const C = 2 * Math.PI * 20; // circumference for r=20 ≈ 125.66
+    const updateRing = () => {
+      const total    = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = total > 0 ? Math.min(window.scrollY / total, 1) : 0;
+      scrollRingFill.style.strokeDashoffset = C * (1 - progress);
+      scrollRing.classList.toggle("visible", window.scrollY > 200);
+    };
+    window.addEventListener("scroll", updateRing, { passive: true });
+    scrollRing.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    updateRing();
+  }
+
+  // === Cookie Cat ===
+  (function () {
+    const catWrap    = document.querySelector('#cookie-cat');
+    const catSvg     = document.querySelector('#ccat-svg');
+    const cPath      = document.querySelector('#ccat-cookie-path');
+    const cClipPath  = document.querySelector('#ccat-clip-path');
+    const chips      = document.querySelector('#ccat-chips');
+    const eyesN      = document.querySelector('#ccat-eyes-n');
+    const eyesC      = document.querySelector('#ccat-eyes-c');
+    const mouthEl    = document.querySelector('#ccat-mouth');
+    const cookieWrap = document.querySelector('#ccat-cookie-wrap');
+    if (!catSvg || !cPath) return;
+
+    const heroEl   = document.querySelector('.hero');
+    const heroEnd  = heroEl ? heroEl.offsetHeight : window.innerHeight;
+
+    const CX = 60, CY = 88, CR = 19;
+    const BITES       = 5;
+    const BITE_DEG    = 360 / BITES;
+    const BITE_ORIGIN = 270;
+    const PX_PER_BITE = 600;
+
+    let lastTotal = -1, chewTimer = null;
+
+    function toRad(d) { return d * Math.PI / 180; }
+
+    function buildPath(bitten) {
+      if (bitten <= 0) {
+        return `M${CX + CR},${CY} A${CR},${CR} 0 1,1 ${CX - CR},${CY} A${CR},${CR} 0 1,1 ${CX + CR},${CY}`;
+      }
+      if (bitten >= 355) return '';
+      const rem  = 360 - bitten;
+      const sDeg = (BITE_ORIGIN + bitten) % 360;
+      const eDeg = BITE_ORIGIN;
+      const sx = (CX + CR * Math.cos(toRad(sDeg))).toFixed(2);
+      const sy = (CY + CR * Math.sin(toRad(sDeg))).toFixed(2);
+      const ex = (CX + CR * Math.cos(toRad(eDeg))).toFixed(2);
+      const ey = (CY + CR * Math.sin(toRad(eDeg))).toFixed(2);
+      return `M${CX},${CY} L${sx},${sy} A${CR},${CR} 0 ${rem > 180 ? 1 : 0},1 ${ex},${ey} Z`;
+    }
+
+    function spawnCrumbs() {
+      if (!catWrap || !catWrap.classList.contains('ccat-visible')) return;
+      const rect = catWrap.getBoundingClientRect();
+      const cx   = rect.left + rect.width  * .52;
+      const cy   = rect.top  + rect.height * .44;
+      for (let i = 0; i < 6; i++) {
+        const c = document.createElement('div');
+        c.className = 'ccat-crumb';
+        const sz = 3 + Math.random() * 3.5;
+        c.style.cssText = `width:${sz}px;height:${sz}px;`
+          + `left:${(cx + (Math.random() - .5) * 14).toFixed(1)}px;`
+          + `top:${cy.toFixed(1)}px;`
+          + `--tx:${((Math.random() - .5) * 40).toFixed(1)}px;`
+          + `--ty:${(28 + Math.random() * 56).toFixed(1)}px;`
+          + `animation-delay:${(i * .06).toFixed(2)}s;`;
+        document.body.appendChild(c);
+        setTimeout(() => c.remove(), 1100);
+      }
+    }
+
+    function triggerChew(isNew) {
+      eyesN.style.display = 'none';
+      eyesC.style.display = '';
+      mouthEl.setAttribute('d', 'M55,86 Q60,84 65,86');
+      catSvg.classList.remove('ccat-chew');
+      void catSvg.offsetWidth;
+      catSvg.classList.add('ccat-chew');
+      if (isNew && cookieWrap) {
+        cookieWrap.classList.remove('ccat-new-cookie');
+        void cookieWrap.offsetWidth;
+        cookieWrap.classList.add('ccat-new-cookie');
+      }
+      if (chewTimer) clearTimeout(chewTimer);
+      chewTimer = setTimeout(() => {
+        eyesN.style.display = '';
+        eyesC.style.display = 'none';
+        mouthEl.setAttribute('d', 'M55,88 Q60,94 65,88');
+        catSvg.classList.remove('ccat-chew');
+      }, 420);
+    }
+
+    function updateCat() {
+      const total  = Math.floor(window.scrollY / PX_PER_BITE);
+      const cycle  = total % BITES;
+      const bitten = cycle * BITE_DEG;
+      const d      = buildPath(bitten);
+      cPath.setAttribute('d', d);
+      if (cClipPath) cClipPath.setAttribute('d', d);
+      chips.style.display = d ? '' : 'none';
+      if (catWrap) catWrap.classList.toggle('ccat-visible', window.scrollY > heroEnd * .8);
+      if (total !== lastTotal) {
+        triggerChew(total > 0 && cycle === 0);
+        spawnCrumbs();
+        lastTotal = total;
+      }
+    }
+
+    window.addEventListener('scroll', updateCat, { passive: true });
+    updateCat();
+  })();
 
 })();
