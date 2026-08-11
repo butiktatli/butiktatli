@@ -111,7 +111,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .brand { display: flex; align-items: center; gap: 8px; padding-left: 4px; min-width: 0; flex-shrink: 0; }
-.brand-logo { width: 36px; height: 36px; border-radius: 12px; object-fit: cover; flex-shrink: 0; }
+.brand-logo { width: 39px; height: 39px; border-radius: 12px; object-fit: cover; flex-shrink: 0; }
 .brand strong { letter-spacing: .2px; font-size: 14px; white-space: nowrap; color: var(--ink); }
 .brand span   { display: block; font-size: 11px; color: var(--muted); margin-top: -2px; white-space: nowrap; }
 
@@ -458,8 +458,8 @@ h1 {
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 
 /* About */
-.about-media { overflow: hidden; }
-.about-media img { width: 100%; height: auto; object-fit: contain; transition: transform .5s ease; border-radius: 14px; }
+.about-media { overflow: hidden; padding: 0; display: flex; }
+.about-media img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius); transition: transform .5s ease; }
 .about-media:hover img { transform: scale(1.02); }
 .about-copy { padding: 24px; }
 .about-copy .ticks { margin: 18px 0 0; display: grid; gap: 12px; }
@@ -956,6 +956,96 @@ footer { padding: 48px 0 60px; }
 .to-top i { font-size: 18px; }
 .to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
 
+/* Hero entrance animation */
+@keyframes heroUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-anim { opacity: 0; animation: heroUp .75s cubic-bezier(.22,.68,0,1.2) forwards; }
+.hero-anim-1 { animation-delay: .05s; }
+.hero-anim-2 { animation-delay: .22s; }
+.hero-anim-3 { animation-delay: .40s; }
+.hero-anim-4 { animation-delay: .58s; }
+
+/* Gallery hover zoom + overlay */
+.gallery-item { display: block; position: relative; overflow: hidden; border-radius: 12px; }
+.gallery-item img { display: block; width: 100%; transition: transform .45s cubic-bezier(.25,.46,.45,.94); }
+.gallery-item:hover img { transform: scale(1.08); }
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .3s;
+  border-radius: 12px;
+}
+.gallery-overlay i { font-size: 2rem; color: #fff; }
+.gallery-item:hover .gallery-overlay { opacity: 1; }
+
+/* Scroll progress ring */
+.scroll-ring {
+  position: fixed;
+  bottom: 140px;
+  right: 18px;
+  width: 52px;
+  height: 52px;
+  border: none;
+  background: var(--card);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 95;
+  box-shadow: 0 4px 20px rgba(0,0,0,.18);
+  opacity: 0;
+  transform: translateY(12px) scale(.9);
+  transition: opacity .3s, transform .3s, box-shadow .2s;
+  pointer-events: none;
+}
+.scroll-ring.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+.scroll-ring:hover {
+  box-shadow: 0 6px 28px rgba(0,0,0,.24);
+  transform: scale(1.06);
+}
+.scroll-ring-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.scroll-ring-track {
+  fill: none;
+  stroke: color-mix(in srgb, var(--accent) 18%, transparent);
+  stroke-width: 3.5;
+}
+.scroll-ring-fill {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-dasharray: 125.66;
+  stroke-dashoffset: 125.66;
+  transition: stroke-dashoffset .1s linear;
+  filter: drop-shadow(0 0 4px color-mix(in srgb, var(--accent) 60%, transparent));
+}
+.scroll-ring-icon {
+  font-size: 17px;
+  color: var(--accent);
+  position: relative;
+  z-index: 1;
+  transition: transform .2s;
+}
+.scroll-ring:hover .scroll-ring-icon { transform: translateY(-2px); }
+
 /* WhatsApp floating button */
 .wa-float {
   position: fixed; right: 20px; bottom: 20px;
@@ -971,6 +1061,70 @@ footer { padding: 48px 0 60px; }
   transition: transform .2s;
 }
 .wa-float:hover { transform: scale(1.10); }
+
+/* Instagram floating button */
+.ig-float {
+  position: fixed; right: 20px; bottom: 80px;
+  width: 52px; height: 52px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 4px 18px rgba(214,36,159,.35);
+  z-index: 900;
+  transition: transform .2s;
+  text-decoration: none;
+}
+.ig-float:hover { transform: scale(1.10); }
+
+/* =========================================================
+   COOKIE CAT SCROLL ANIMATION (desktop only)
+   ========================================================= */
+#cookie-cat {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 80;
+  pointer-events: none;
+  width: 56px;
+  display: none;
+  opacity: 0;
+  transition: opacity .5s ease;
+  filter: drop-shadow(1px 2px 6px rgba(232,100,140,.18));
+}
+#cookie-cat.ccat-visible { opacity: 1; }
+#ccat-svg { display: block; width: 100%; height: auto; overflow: visible; }
+
+@keyframes ccatBounce {
+  0%,100% { transform: translateY(0); }
+  35%     { transform: translateY(-5px); }
+  65%     { transform: translateY(-1px); }
+}
+.ccat-chew { animation: ccatBounce .38s ease; }
+
+@keyframes ccatCookiePop {
+  0%   { transform: scale(0) rotate(-15deg); opacity: 0; }
+  65%  { transform: scale(1.18) rotate(4deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+#ccat-cookie-wrap { transform-box: fill-box; transform-origin: center; }
+.ccat-new-cookie { animation: ccatCookiePop .45s cubic-bezier(.34,1.56,.64,1) forwards; }
+
+@keyframes ccatCrumb {
+  0%   { transform: translate(0,0) rotate(0deg); opacity: .9; }
+  100% { transform: translate(var(--tx), var(--ty)) rotate(210deg); opacity: 0; }
+}
+.ccat-crumb {
+  position: fixed;
+  border-radius: 50%;
+  background: #c8823a;
+  pointer-events: none;
+  z-index: 82;
+  animation: ccatCrumb .85s ease-in forwards;
+}
+
+@media (min-width: 1350px) { #cookie-cat { display: block; } }
 
 /* =========================================================
    RESPONSIVE — Tablet ≤ 1024px
@@ -1272,6 +1426,8 @@ footer { padding: 48px 0 60px; }
 
   .to-top { right: 72px; bottom: 16px; }
   .wa-float { right: 16px; bottom: 16px; }
+  .ig-float { right: 16px; bottom: 76px; }
+  .scroll-ring { bottom: 136px; }
 
   footer { padding: 28px 0 42px; }
 }
