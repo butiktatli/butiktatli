@@ -62,6 +62,10 @@
       tick3:          "Dekorasyon, dolgu ve sunum teknikleri",
       tick4:          "Evde ve profesyonel mutfakta uygulanabilir ipuçları",
       about_btn:      "Bilgi Al",
+      awards_tag:     "Ödüller & Belgeler",
+      awards_h2:      "Ödüller ve sertifikalar.",
+      awards_sub:     "Uluslararası yarışmalardan mesleki yeterlilik belgelerine — pastacılık kariyerim boyunca kazandığım ödül ve sertifikaların öne çıkanları.",
+      awards_badge:   "Uluslararası Ödüllü",
       courses_tag:    "Eğitimler",
       courses_h2:     "Pastacılık eğitimleri.",
       courses_sub:    "Seviye fark etmez: temelden ileri düzeye, butik pastacılığın en çok aranan eğitimleri.",
@@ -176,6 +180,10 @@
       tick3:          "Decoration, fillings and presentation techniques",
       tick4:          "Tips you can apply at home or professionally",
       about_btn:      "Get Info",
+      awards_tag:     "Awards & Credentials",
+      awards_h2:      "Awards & credentials.",
+      awards_sub:     "From international competitions to official professional qualifications — a curated selection of the awards and credentials earned throughout my pastry career.",
+      awards_badge:   "Internationally Awarded",
       courses_tag:    "Classes",
       courses_h2:     "Pastry classes.",
       courses_sub:    "All levels welcome: from fundamentals to advanced boutique pastry.",
@@ -304,6 +312,8 @@
 
     set("t_about_tag",   L.about_tag);
     set("t_about_badge", L.about_badge);
+    set("t_awards_tag",   L.awards_tag);
+    set("t_awards_badge", L.awards_badge);
     set("t_about_lead",  L.about_lead);
     set("t_about_btn",   L.about_btn);
     set("t_tick1", L.tick1);
@@ -378,6 +388,7 @@
 
     /* h2 translations — keep gradient-text span */
     [
+      ["t_awards_h2",  L.awards_h2,  "sertifikalar.",    "credentials."],
       ["t_about_h2",   L.about_h2,   "tutkumuz.",        "passion."],
       ["t_courses_h2", L.courses_h2, "eğitimleri.",      "classes."],
       ["t_satis_h2",   L.satis_h2,   "pasta siparişi.",  "cake orders."],
@@ -401,6 +412,7 @@
 
     /* subtitle translations */
     [
+      ["t_awards_sub",  L.awards_sub],
       ["t_about_sub",   L.about_sub],
       ["t_courses_sub", L.courses_sub],
       ["t_satis_sub",   L.satis_sub],
