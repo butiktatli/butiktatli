@@ -62,6 +62,20 @@
       tick3:          "Dekorasyon, dolgu ve sunum teknikleri",
       tick4:          "Evde ve profesyonel mutfakta uygulanabilir ipuçları",
       about_btn:      "Bilgi Al",
+      awards_tag:     "Ödüller & Belgeler",
+      awards_h2:      "Ödüller ve sertifikalar.",
+      awards_sub:     "Uluslararası yarışmalardan mesleki yeterlilik belgelerine — pastacılık kariyerim boyunca kazandığım ödül ve sertifikaların öne çıkanları.",
+      awards_badge:   "Uluslararası Ödüllü",
+      aw1_lbl: "Gümüş Madalya",  aw1_org: "Uluslararası · Pastry Artistic D2", aw1_yr: "Stuttgart · Şubat 2020",
+      aw2_lbl: "Uluslararası",                                                   aw2_yr: "Stuttgart · Şubat 2024",
+      aw3_lbl: "Altın Madalya",  aw3_h3: "Pastry Cup Başarı Ödülü",
+      aw4_lbl: "Merit Madalyası",aw4_h3: "Bakırköy Pastacılık Festivali", aw4_org: "Artistic Kategorisi", aw4_yr: "İstanbul · 2015",
+      aw5_lbl: "Seviye 4",       aw5_h3: "Pastacı Mesleki Yeterlilik",   aw5_org: "MYK · UGETAM Onaylı",
+      aw6_h3: "Usta Öğreticilik Belgesi",        aw6_org: "T.C. Millî Eğitim Bakanlığı",
+      aw7_lbl: "Ustalık",        aw7_h3: "Pasta & Tatlı Ustalık Belgesi", aw7_org: "T.C. Millî Eğitim Bakanlığı",
+      aw8_lbl: "120 Saat",       aw8_h3: "Butik Çikolata Hazırlama",     aw8_org: "MEB Hayat Boyu Öğrenme",
+      aw9_lbl: "256 Saat",       aw9_h3: "Şeker Hamuru Çiçek Yapımı",    aw9_org: "MEB Hayat Boyu Öğrenme",
+      aw10_lbl: "Üniversite",    aw10_h3: "Çiçek & Figür Modelleme",     aw10_org: "İstanbul Aydın Üniversitesi",
       courses_tag:    "Eğitimler",
       courses_h2:     "Pastacılık eğitimleri.",
       courses_sub:    "Seviye fark etmez: temelden ileri düzeye, butik pastacılığın en çok aranan eğitimleri.",
@@ -188,11 +202,11 @@
       footer_small:   "Sorular için WhatsApp'tan yazabilir veya formu kullanabilirsiniz.",
       reviews_tag:    "Yorumlar",
       reviews_h2:     "Müşterilerimiz ne diyor?",
-      reviews_sub:    "148 Google yorumunda 5 yıldızla değerlendiriliyoruz.",
+      reviews_sub:    "149 Google yorumunda 5 yıldızla değerlendiriliyoruz.",
       reviews_badge:  "Google Doğrulamalı",
-      reviews_count:  "148 yorum",
+      reviews_count:  "149 yorum",
       reviews_cta:    "Tüm Yorumları Google'da Gör",
-      reviews_all:    "Tüm 148 Yorumu Google'da Gör",
+      reviews_all:    "Tüm 149 Yorumu Google'da Gör",
       reviews_note:   "Yorumlar Google tarafından doğrulanmıştır.",
       rev1_text:      "Zeynep hanım inanılmaz yetenekli, pasta tam istediğimiz gibi oldu. İç lezzeti çok güzeldi herkes bayıldı. Oğlumun ilk doğum günü için kesinlikle mükemmel bir seçimdi, partinin yıldızı oldu diyebilirim. Tekrardan çok teşekkürler, ellerinize sağlık ♥️",
       rev2_text:      "Zeynep hocamdan pastacılık kursu eğitimi aldım, memnuniyetimi anlatmaya kelimeler yetmez. İşini çok seven ve hakkıyla yapan biri; öğrettiği tariflerle lezzetli ve kaliteli pastalar, kekler yapabiliyoruz. Ne yaptıysak herkes bayılarak yedi 😍 İyi ki yollarımız kesişmiş canım Zeynep hocam 🌺",
@@ -248,6 +262,20 @@
       tick3:          "Decoration, fillings and presentation techniques",
       tick4:          "Tips you can apply at home or professionally",
       about_btn:      "Get Info",
+      awards_tag:     "Awards & Credentials",
+      awards_h2:      "Awards & credentials.",
+      awards_sub:     "From international competitions to official professional qualifications — a curated selection of the awards and credentials earned throughout my pastry career.",
+      awards_badge:   "Internationally Awarded",
+      aw1_lbl: "Silver Medal",   aw1_org: "International · Pastry Artistic D2", aw1_yr: "Stuttgart · February 2020",
+      aw2_lbl: "International",                                                   aw2_yr: "Stuttgart · February 2024",
+      aw3_lbl: "Gold Medal",     aw3_h3: "Pastry Cup Achievement Award",
+      aw4_lbl: "Merit Medal",    aw4_h3: "Bakırköy Pastry Festival",   aw4_org: "Artistic Category",  aw4_yr: "Istanbul · 2015",
+      aw5_lbl: "Level 4",        aw5_h3: "Pastry Vocational Qualification", aw5_org: "MYK · UGETAM Certified",
+      aw6_h3: "Master Trainer Certificate",          aw6_org: "Turkish Ministry of National Education",
+      aw7_lbl: "Mastery",        aw7_h3: "Cake & Dessert Mastery Certificate", aw7_org: "Turkish Ministry of National Education",
+      aw8_lbl: "120 Hours",      aw8_h3: "Boutique Chocolate Making",   aw8_org: "MEB Lifelong Learning",
+      aw9_lbl: "256 Hours",      aw9_h3: "Sugar Paste Flower Making",   aw9_org: "MEB Lifelong Learning",
+      aw10_lbl: "University",    aw10_h3: "Flower & Figure Modelling",  aw10_org: "Istanbul Aydın University",
       courses_tag:    "Classes",
       courses_h2:     "Pastry classes.",
       courses_sub:    "All levels welcome: from fundamentals to advanced boutique pastry.",
@@ -374,11 +402,11 @@
       footer_small:   "Message us on WhatsApp or use the contact form.",
       reviews_tag:    "Reviews",
       reviews_h2:     "What do our customers say?",
-      reviews_sub:    "Rated 5 stars across 148 Google reviews.",
+      reviews_sub:    "Rated 5 stars across 149 Google reviews.",
       reviews_badge:  "Google Verified",
-      reviews_count:  "148 reviews",
+      reviews_count:  "149 reviews",
       reviews_cta:    "See All Reviews on Google",
-      reviews_all:    "See All 148 Reviews on Google",
+      reviews_all:    "See All 149 Reviews on Google",
       reviews_note:   "Reviews verified by Google.",
       rev1_text:      "Zeynep Hanım is incredibly talented — the cake turned out exactly as we wanted. The taste was wonderful, everyone loved it. It was absolutely the perfect choice for my son's first birthday. Thank you so much, a true masterpiece! ♥️",
       rev2_text:      "I took a pastry course from Zeynep Hoca and words can't describe how happy I am. She truly loves what she does and teaches it brilliantly. Everything we made was delicious and everyone devoured it 😍 So glad our paths crossed 🌺",
@@ -460,6 +488,18 @@
 
     set("t_about_tag",   L.about_tag);
     set("t_about_badge", L.about_badge);
+    set("t_awards_tag",   L.awards_tag);
+    set("t_awards_badge", L.awards_badge);
+    set("aw1_lbl", L.aw1_lbl); set("aw1_org", L.aw1_org); set("aw1_yr", L.aw1_yr);
+    set("aw2_lbl", L.aw2_lbl); set("aw2_yr",  L.aw2_yr);
+    set("aw3_lbl", L.aw3_lbl); set("aw3_h3",  L.aw3_h3);
+    set("aw4_lbl", L.aw4_lbl); set("aw4_h3",  L.aw4_h3); set("aw4_org", L.aw4_org); set("aw4_yr", L.aw4_yr);
+    set("aw5_lbl", L.aw5_lbl); set("aw5_h3",  L.aw5_h3); set("aw5_org", L.aw5_org);
+    set("aw6_h3",  L.aw6_h3);  set("aw6_org", L.aw6_org);
+    set("aw7_lbl", L.aw7_lbl); set("aw7_h3",  L.aw7_h3); set("aw7_org", L.aw7_org);
+    set("aw8_lbl", L.aw8_lbl); set("aw8_h3",  L.aw8_h3); set("aw8_org", L.aw8_org);
+    set("aw9_lbl", L.aw9_lbl); set("aw9_h3",  L.aw9_h3); set("aw9_org", L.aw9_org);
+    set("aw10_lbl",L.aw10_lbl);set("aw10_h3", L.aw10_h3);set("aw10_org",L.aw10_org);
     set("t_about_lead",  L.about_lead);
     set("t_about_btn",   L.about_btn);
     set("t_tick1", L.tick1);
@@ -619,6 +659,7 @@
 
     /* h2 translations — keep gradient-text span */
     [
+      ["t_awards_h2",  L.awards_h2,  "sertifikalar.",    "credentials."],
       ["t_about_h2",   L.about_h2,   "tutkumuz.",        "passion."],
       ["t_courses_h2", L.courses_h2, "eğitimleri.",      "classes."],
       ["t_satis_h2",   L.satis_h2,   "pasta siparişi.",  "cake orders."],
@@ -643,6 +684,7 @@
 
     /* subtitle translations */
     [
+      ["t_awards_sub",  L.awards_sub],
       ["t_about_sub",   L.about_sub],
       ["t_courses_sub", L.courses_sub],
       ["t_satis_sub",   L.satis_sub],
