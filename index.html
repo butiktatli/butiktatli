@@ -254,7 +254,7 @@
   <div class="hero-bg-mobile" aria-hidden="true">
     <img src="img/hero_banner_mb.png" alt="">
   </div>
-	  
+
       <div class="sparkle s1" aria-hidden="true"><i class="bi bi-stars"></i></div>
       <div class="sparkle s2" aria-hidden="true"><i class="bi bi-heart-fill"></i></div>
       <div class="sparkle s3" aria-hidden="true"><i class="bi bi-star-fill"></i></div>
@@ -339,154 +339,145 @@
       </div>
     </section>
 
-    <!-- ÖDÜLLER & BELGELER -->
-    <section id="awards" class="section section-alt" aria-label="Ödüller ve Belgeler">
+    <!-- PASTA SİPARİŞİ -->
+    <section id="satis" class="section section-alt" aria-label="Pasta Siparişi ve Satış">
       <div class="container">
         <div class="header">
           <div>
-            <div class="section-tag"><i class="bi bi-trophy-fill"></i> <span id="t_awards_tag">Ödüller &amp; Belgeler</span></div>
-            <h2 id="t_awards_h2">Ödüller <span class="gradient-text">ve sertifikalar.</span></h2>
-            <p class="subtitle" id="t_awards_sub">Uluslararası yarışmalardan mesleki yeterlilik belgelerine — pastacılık kariyerim boyunca kazandığım ödül ve sertifikaların öne çıkanları.</p>
+            <div class="section-tag"><i class="bi bi-cake2-fill"></i> <span id="t_satis_tag">Pasta Siparişi</span></div>
+            <h2 id="t_satis_h2">Özel tasarım <span class="gradient-text">pasta siparişi.</span></h2>
+            <p class="subtitle" id="t_satis_sub">
+              Doğum günü, düğün, nişan veya özel gün için sipariş bazlı butik pasta hazırlıyoruz. WhatsApp'tan fotoğraf ve detaylarınızı paylaşın, size özel teklif hazırlayalım.
+            </p>
           </div>
-          <div class="badge"><i class="bi bi-award-fill"></i> <span id="t_awards_badge">Uluslararası Ödüllü</span></div>
+          <div class="badge" id="t_satis_badge"><i class="bi bi-box-seam-fill"></i> Sipariş Bazlı</div>
         </div>
 
-        <div class="awards-grid">
-          <div class="award-card intl" data-aos="fade-up">
-            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
-            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
-            <div class="award-card-inner">
-              <span class="award-label" id="aw1_lbl">Gümüş Madalya</span>
-              <div class="award-medallion" aria-hidden="true"><i class="bi bi-trophy-fill"></i></div>
-              <div class="award-divider" aria-hidden="true">· · ·</div>
-              <h3>IKA Culinary Olympics</h3>
-              <p class="award-org" id="aw1_org">Uluslararası · Pastry Artistic D2</p>
-              <p class="award-year" id="aw1_yr">Stuttgart · Şubat 2020</p>
+        <!-- Order CTA Banner -->
+        <div class="order-banner" data-aos="fade-up">
+          <div class="order-banner-inner">
+            <div class="order-icon" aria-hidden="true"><i class="bi bi-whatsapp"></i></div>
+            <div class="order-text">
+              <strong id="t_order_title">Sipariş vermek çok kolay!</strong>
+              <p id="t_order_desc">WhatsApp'tan istediğiniz tasarım, boyut ve tarih bilgisini paylaşın. En kısa sürede fiyat teklifinizi hazırlayalım.</p>
+            </div>
+            <a class="btn btn-wa btn-lg" href="https://wa.me/905357466331?text=Merhaba%2C+pasta+sipar%C4%B1%C5%9Fi+vermek+istiyorum." target="_blank" rel="noopener" id="t_order_btn">
+              <i class="bi bi-whatsapp"></i>
+              <span id="t_order_btn_text">WhatsApp'tan Sipariş Ver</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sales Photos Swiper -->
+        <div class="sales-swiper-wrap" data-aos="fade-up">
+          <div class="swiper salesSwiper" aria-label="Pasta sipariş galerisi">
+            <div class="swiper-wrapper" id="salesWrapper"></div>
+          </div>
+          <div class="swiper-nav">
+            <div style="display:flex; gap:10px;">
+              <button class="swiper-btn salesPrev" type="button" aria-label="Önceki"><i class="bi bi-arrow-left" aria-hidden="true"></i></button>
+              <button class="swiper-btn salesNext" type="button" aria-label="Sonraki"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
             </div>
           </div>
+        </div>
+      <!-- SEO: Pasta Türleri Menüsü -->
+        <div class="categories-wrap" id="pasta-cesitleri" data-aos="fade-up">
+          <h3 id="t_categories_title">Sipariş Aldığımız Pasta Çeşitleri</h3>
 
-          <div class="award-card intl" data-aos="fade-up" data-aos-delay="80">
-            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
-            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
-            <div class="award-card-inner">
-              <span class="award-label" id="aw2_lbl">Uluslararası</span>
-              <div class="award-medallion" aria-hidden="true"><i class="bi bi-trophy-fill"></i></div>
-              <div class="award-divider" aria-hidden="true">· · ·</div>
-              <h3>IKA Culinary Olympics</h3>
-              <p class="award-org">Pastry Artistic D2</p>
-              <p class="award-year" id="aw2_yr">Stuttgart · Şubat 2024</p>
-            </div>
+          <!-- Sayfası olan kategoriler — büyük menü kartları -->
+          <div class="cat-menu-grid">
+            <a href="anneler-gunu-pastasi.html" class="cat-menu-card">
+              <i class="bi bi-heart-fill cat-menu-icon"></i>
+              <span class="cat-menu-name">Anneler Günü Pastası</span>
+              <i class="bi bi-arrow-right cat-menu-arrow"></i>
+            </a>
+            <a href="dogum-gunu-pastasi.html" class="cat-menu-card">
+              <i class="bi bi-balloon-fill cat-menu-icon"></i>
+              <span class="cat-menu-name">Doğum Günü Pastası</span>
+              <i class="bi bi-arrow-right cat-menu-arrow"></i>
+            </a>
+            <a href="nisan-pastasi.html" class="cat-menu-card">
+              <i class="bi bi-stars cat-menu-icon"></i>
+              <span class="cat-menu-name">Söz / Nişan Pastası</span>
+              <i class="bi bi-arrow-right cat-menu-arrow"></i>
+            </a>
+            <a href="cupcake.html" class="cat-menu-card">
+              <i class="bi bi-cup-hot-fill cat-menu-icon"></i>
+              <span class="cat-menu-name">Cupcake</span>
+              <i class="bi bi-arrow-right cat-menu-arrow"></i>
+            </a>
+            <a href="makaron.html" class="cat-menu-card">
+              <i class="bi bi-flower1 cat-menu-icon"></i>
+              <span class="cat-menu-name">Butik Makaron</span>
+              <i class="bi bi-arrow-right cat-menu-arrow"></i>
+            </a>
+            <a href="cocuk-pastasi.html" class="cat-menu-card">
+              <i class="bi bi-emoji-smile-fill cat-menu-icon"></i>
+              <span class="cat-menu-name">Çocuk Pastaları</span>
+              <i class="bi bi-arrow-right cat-menu-arrow"></i>
+            </a>
+            <a href="cicekli-pasta.html" class="cat-menu-card">
+              <i class="bi bi-flower2 cat-menu-icon"></i>
+              <span class="cat-menu-name">Çiçekli Pastalar</span>
+              <i class="bi bi-arrow-right cat-menu-arrow"></i>
+            </a>
+            <a href="kremali-pasta.html" class="cat-menu-card">
+              <i class="bi bi-droplet-fill cat-menu-icon"></i>
+              <span class="cat-menu-name">Kremalı Pastalar</span>
+              <i class="bi bi-arrow-right cat-menu-arrow"></i>
+            </a>
+            <a href="resim-baski-pasta.html" class="cat-menu-card">
+              <i class="bi bi-image-fill cat-menu-icon"></i>
+              <span class="cat-menu-name">Resim Baskılı Pastalar</span>
+              <i class="bi bi-arrow-right cat-menu-arrow"></i>
+            </a>
+            <a href="sevgililer-gunu-pastasi.html" class="cat-menu-card">
+              <i class="bi bi-hearts cat-menu-icon"></i>
+              <span class="cat-menu-name">Sevgililer Günü Pastaları</span>
+              <i class="bi bi-arrow-right cat-menu-arrow"></i>
+            </a>
+            <a href="taraftar-spor-pastasi.html" class="cat-menu-card">
+              <i class="bi bi-trophy-fill cat-menu-icon"></i>
+              <span class="cat-menu-name">Taraftar ve Spor Pastaları</span>
+              <i class="bi bi-arrow-right cat-menu-arrow"></i>
+            </a>
+            <a href="vegan-pasta.html" class="cat-menu-card">
+              <i class="bi bi-leaf-fill cat-menu-icon"></i>
+              <span class="cat-menu-name">Vegan Pastalar</span>
+              <i class="bi bi-arrow-right cat-menu-arrow"></i>
+            </a>
+            <a href="cakepops.html" class="cat-menu-card">
+              <i class="bi bi-circle-fill cat-menu-icon"></i>
+              <span class="cat-menu-name">Cake Pops</span>
+              <i class="bi bi-arrow-right cat-menu-arrow"></i>
+            </a>
           </div>
 
-          <div class="award-card" data-aos="fade-up" data-aos-delay="160">
-            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
-            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
-            <div class="award-card-inner">
-              <span class="award-label" id="aw3_lbl">Altın Madalya</span>
-              <div class="award-medallion" aria-hidden="true"><i class="bi bi-patch-check-fill"></i></div>
-              <div class="award-divider" aria-hidden="true">· · ·</div>
-              <h3 id="aw3_h3">Pastry Cup Başarı Ödülü</h3>
-              <p class="award-org">UÇPAD</p>
-              <p class="award-year">2023</p>
-            </div>
-          </div>
-
-          <div class="award-card" data-aos="fade-up" data-aos-delay="80">
-            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
-            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
-            <div class="award-card-inner">
-              <span class="award-label" id="aw4_lbl">Merit Madalyası</span>
-              <div class="award-medallion" aria-hidden="true"><i class="bi bi-award-fill"></i></div>
-              <div class="award-divider" aria-hidden="true">· · ·</div>
-              <h3 id="aw4_h3">Bakırköy Pastacılık Festivali</h3>
-              <p class="award-org" id="aw4_org">Artistic Kategorisi</p>
-              <p class="award-year" id="aw4_yr">İstanbul · 2015</p>
-            </div>
-          </div>
-
-          <div class="award-card" data-aos="fade-up" data-aos-delay="160">
-            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
-            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
-            <div class="award-card-inner">
-              <span class="award-label" id="aw5_lbl">Seviye 4</span>
-              <div class="award-medallion" aria-hidden="true"><i class="bi bi-gem"></i></div>
-              <div class="award-divider" aria-hidden="true">· · ·</div>
-              <h3 id="aw5_h3">Pastacı Mesleki Yeterlilik</h3>
-              <p class="award-org" id="aw5_org">MYK · UGETAM Onaylı</p>
-              <p class="award-year">2021</p>
-            </div>
-          </div>
-
-          <div class="award-card" data-aos="fade-up" data-aos-delay="240">
-            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
-            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
-            <div class="award-card-inner">
-              <span class="award-label">MEB</span>
-              <div class="award-medallion" aria-hidden="true"><i class="bi bi-mortarboard-fill"></i></div>
-              <div class="award-divider" aria-hidden="true">· · ·</div>
-              <h3 id="aw6_h3">Usta Öğreticilik Belgesi</h3>
-              <p class="award-org" id="aw6_org">T.C. Millî Eğitim Bakanlığı</p>
-              <p class="award-year">2022</p>
-            </div>
-          </div>
-
-          <div class="award-card" data-aos="fade-up">
-            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
-            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
-            <div class="award-card-inner">
-              <span class="award-label" id="aw7_lbl">Ustalık</span>
-              <div class="award-medallion" aria-hidden="true"><i class="bi bi-journal-check"></i></div>
-              <div class="award-divider" aria-hidden="true">· · ·</div>
-              <h3 id="aw7_h3">Pasta &amp; Tatlı Ustalık Belgesi</h3>
-              <p class="award-org" id="aw7_org">T.C. Millî Eğitim Bakanlığı</p>
-              <p class="award-year">2020</p>
-            </div>
-          </div>
-
-          <div class="award-card" data-aos="fade-up" data-aos-delay="80">
-            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
-            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
-            <div class="award-card-inner">
-              <span class="award-label" id="aw8_lbl">120 Saat</span>
-              <div class="award-medallion" aria-hidden="true"><i class="bi bi-cup-hot-fill"></i></div>
-              <div class="award-divider" aria-hidden="true">· · ·</div>
-              <h3 id="aw8_h3">Butik Çikolata Hazırlama</h3>
-              <p class="award-org" id="aw8_org">MEB Hayat Boyu Öğrenme</p>
-              <p class="award-year">2021</p>
-            </div>
-          </div>
-
-          <div class="award-card" data-aos="fade-up" data-aos-delay="160">
-            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
-            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
-            <div class="award-card-inner">
-              <span class="award-label" id="aw9_lbl">256 Saat</span>
-              <div class="award-medallion" aria-hidden="true"><i class="bi bi-flower1"></i></div>
-              <div class="award-divider" aria-hidden="true">· · ·</div>
-              <h3 id="aw9_h3">Şeker Hamuru Çiçek Yapımı</h3>
-              <p class="award-org" id="aw9_org">MEB Hayat Boyu Öğrenme</p>
-              <p class="award-year">2023</p>
-            </div>
-          </div>
-
-          <div class="award-card" data-aos="fade-up" data-aos-delay="240">
-            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
-            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
-            <div class="award-card-inner">
-              <span class="award-label" id="aw10_lbl">Üniversite</span>
-              <div class="award-medallion" aria-hidden="true"><i class="bi bi-building"></i></div>
-              <div class="award-divider" aria-hidden="true">· · ·</div>
-              <h3 id="aw10_h3">Çiçek &amp; Figür Modelleme</h3>
-              <p class="award-org" id="aw10_org">İstanbul Aydın Üniversitesi</p>
-              <p class="award-year">2022</p>
-            </div>
+          <!-- Diğer kategoriler — küçük etiketler -->
+          <div class="categories-tags" style="margin-top:16px;">
+            <span>Babalar Günü Pastası</span>
+            <span>Harf Pasta</span>
+            <span>Hoşgeldin Bebek Pastası</span>
+            <span>Baby Shower Pastası</span>
+            <span>1 Yaş Pastası</span>
+            <span>Diş Buğdayı</span>
+            <span>Doktor Pastası</span>
+            <span>Yetişkin Pastaları</span>
+            <span>Naked Pasta</span>
+            <span>3D Elbise Pasta</span>
+            <span>Beze / Mereng</span>
+            <span>Kurabiye</span>
+            <span>Çizgi Film Karakterleri Pastası</span>
+            <span>Figürlü Pasta</span>
+            <span>Düğün Organizasyon Pastası</span>
+            <span>Özel Tasarım Pasta İstanbul</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- COURSES / EĞİTİMLER -->
-    <section id="courses" class="section section-alt" aria-label="Eğitimler">
+    <section id="courses" class="section" aria-label="Eğitimler">
       <div class="container">
         <div class="header">
           <div>
@@ -650,143 +641,6 @@
       </div>
     </section>
 
-    <!-- PASTA SİPARİŞİ — YENİ BÖLÜM -->
-    <section id="satis" class="section" aria-label="Pasta Siparişi ve Satış">
-      <div class="container">
-        <div class="header">
-          <div>
-            <div class="section-tag"><i class="bi bi-cake2-fill"></i> <span id="t_satis_tag">Pasta Siparişi</span></div>
-            <h2 id="t_satis_h2">Özel tasarım <span class="gradient-text">pasta siparişi.</span></h2>
-            <p class="subtitle" id="t_satis_sub">
-              Doğum günü, düğün, nişan veya özel gün için sipariş bazlı butik pasta hazırlıyoruz. WhatsApp'tan fotoğraf ve detaylarınızı paylaşın, size özel teklif hazırlayalım.
-            </p>
-          </div>
-          <div class="badge" id="t_satis_badge"><i class="bi bi-box-seam-fill"></i> Sipariş Bazlı</div>
-        </div>
-
-        <!-- Order CTA Banner -->
-        <div class="order-banner" data-aos="fade-up">
-          <div class="order-banner-inner">
-            <div class="order-icon" aria-hidden="true"><i class="bi bi-whatsapp"></i></div>
-            <div class="order-text">
-              <strong id="t_order_title">Sipariş vermek çok kolay!</strong>
-              <p id="t_order_desc">WhatsApp'tan istediğiniz tasarım, boyut ve tarih bilgisini paylaşın. En kısa sürede fiyat teklifinizi hazırlayalım.</p>
-            </div>
-            <a class="btn btn-wa btn-lg" href="https://wa.me/905357466331?text=Merhaba%2C+pasta+sipar%C4%B1%C5%9Fi+vermek+istiyorum." target="_blank" rel="noopener" id="t_order_btn">
-              <i class="bi bi-whatsapp"></i>
-              <span id="t_order_btn_text">WhatsApp'tan Sipariş Ver</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Sales Photos Swiper -->
-        <div class="sales-swiper-wrap" data-aos="fade-up">
-          <div class="swiper salesSwiper" aria-label="Pasta sipariş galerisi">
-            <div class="swiper-wrapper" id="salesWrapper"></div>
-          </div>
-          <div class="swiper-nav">
-            <div style="display:flex; gap:10px;">
-              <button class="swiper-btn salesPrev" type="button" aria-label="Önceki"><i class="bi bi-arrow-left" aria-hidden="true"></i></button>
-              <button class="swiper-btn salesNext" type="button" aria-label="Sonraki"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
-            </div>
-          </div>
-        </div>
-      <!-- SEO: Pasta Türleri Menüsü -->
-        <div class="categories-wrap" id="pasta-cesitleri" data-aos="fade-up">
-          <h3 id="t_categories_title">Sipariş Aldığımız Pasta Çeşitleri</h3>
-
-          <!-- Sayfası olan kategoriler — büyük menü kartları -->
-          <div class="cat-menu-grid">
-            <a href="anneler-gunu-pastasi.html" class="cat-menu-card">
-              <i class="bi bi-heart-fill cat-menu-icon"></i>
-              <span class="cat-menu-name">Anneler Günü Pastası</span>
-              <i class="bi bi-arrow-right cat-menu-arrow"></i>
-            </a>
-            <a href="dogum-gunu-pastasi.html" class="cat-menu-card">
-              <i class="bi bi-balloon-fill cat-menu-icon"></i>
-              <span class="cat-menu-name">Doğum Günü Pastası</span>
-              <i class="bi bi-arrow-right cat-menu-arrow"></i>
-            </a>
-            <a href="nisan-pastasi.html" class="cat-menu-card">
-              <i class="bi bi-stars cat-menu-icon"></i>
-              <span class="cat-menu-name">Söz / Nişan Pastası</span>
-              <i class="bi bi-arrow-right cat-menu-arrow"></i>
-            </a>
-            <a href="cupcake.html" class="cat-menu-card">
-              <i class="bi bi-cup-hot-fill cat-menu-icon"></i>
-              <span class="cat-menu-name">Cupcake</span>
-              <i class="bi bi-arrow-right cat-menu-arrow"></i>
-            </a>
-            <a href="makaron.html" class="cat-menu-card">
-              <i class="bi bi-flower1 cat-menu-icon"></i>
-              <span class="cat-menu-name">Butik Makaron</span>
-              <i class="bi bi-arrow-right cat-menu-arrow"></i>
-            </a>
-            <a href="cocuk-pastasi.html" class="cat-menu-card">
-              <i class="bi bi-emoji-smile-fill cat-menu-icon"></i>
-              <span class="cat-menu-name">Çocuk Pastaları</span>
-              <i class="bi bi-arrow-right cat-menu-arrow"></i>
-            </a>
-            <a href="cicekli-pasta.html" class="cat-menu-card">
-              <i class="bi bi-flower2 cat-menu-icon"></i>
-              <span class="cat-menu-name">Çiçekli Pastalar</span>
-              <i class="bi bi-arrow-right cat-menu-arrow"></i>
-            </a>
-            <a href="kremali-pasta.html" class="cat-menu-card">
-              <i class="bi bi-droplet-fill cat-menu-icon"></i>
-              <span class="cat-menu-name">Kremalı Pastalar</span>
-              <i class="bi bi-arrow-right cat-menu-arrow"></i>
-            </a>
-            <a href="resim-baski-pasta.html" class="cat-menu-card">
-              <i class="bi bi-image-fill cat-menu-icon"></i>
-              <span class="cat-menu-name">Resim Baskılı Pastalar</span>
-              <i class="bi bi-arrow-right cat-menu-arrow"></i>
-            </a>
-            <a href="sevgililer-gunu-pastasi.html" class="cat-menu-card">
-              <i class="bi bi-hearts cat-menu-icon"></i>
-              <span class="cat-menu-name">Sevgililer Günü Pastaları</span>
-              <i class="bi bi-arrow-right cat-menu-arrow"></i>
-            </a>
-            <a href="taraftar-spor-pastasi.html" class="cat-menu-card">
-              <i class="bi bi-trophy-fill cat-menu-icon"></i>
-              <span class="cat-menu-name">Taraftar ve Spor Pastaları</span>
-              <i class="bi bi-arrow-right cat-menu-arrow"></i>
-            </a>
-            <a href="vegan-pasta.html" class="cat-menu-card">
-              <i class="bi bi-leaf-fill cat-menu-icon"></i>
-              <span class="cat-menu-name">Vegan Pastalar</span>
-              <i class="bi bi-arrow-right cat-menu-arrow"></i>
-            </a>
-            <a href="cakepops.html" class="cat-menu-card">
-              <i class="bi bi-circle-fill cat-menu-icon"></i>
-              <span class="cat-menu-name">Cake Pops</span>
-              <i class="bi bi-arrow-right cat-menu-arrow"></i>
-            </a>
-          </div>
-
-          <!-- Diğer kategoriler — küçük etiketler -->
-          <div class="categories-tags" style="margin-top:16px;">
-            <span>Babalar Günü Pastası</span>
-            <span>Harf Pasta</span>
-            <span>Hoşgeldin Bebek Pastası</span>
-            <span>Baby Shower Pastası</span>
-            <span>1 Yaş Pastası</span>
-            <span>Diş Buğdayı</span>
-            <span>Doktor Pastası</span>
-            <span>Yetişkin Pastaları</span>
-            <span>Naked Pasta</span>
-            <span>3D Elbise Pasta</span>
-            <span>Beze / Mereng</span>
-            <span>Kurabiye</span>
-            <span>Çizgi Film Karakterleri Pastası</span>
-            <span>Figürlü Pasta</span>
-            <span>Düğün Organizasyon Pastası</span>
-            <span>Özel Tasarım Pasta İstanbul</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- EĞİTİM GALERİSİ -->
     <section id="gallery" class="section section-alt" aria-label="Eğitim Galerisi">
       <div class="container">
@@ -831,6 +685,152 @@
         </div>
 
         <div class="video-grid" id="videoGrid" data-aos="fade-up"></div>
+      </div>
+    </section>
+
+    <!-- ÖDÜLLER & BELGELER -->
+    <section id="awards" class="section section-alt" aria-label="Ödüller ve Belgeler">
+      <div class="container">
+        <div class="header">
+          <div>
+            <div class="section-tag"><i class="bi bi-trophy-fill"></i> <span id="t_awards_tag">Ödüller &amp; Belgeler</span></div>
+            <h2 id="t_awards_h2">Ödüller <span class="gradient-text">ve sertifikalar.</span></h2>
+            <p class="subtitle" id="t_awards_sub">Uluslararası yarışmalardan mesleki yeterlilik belgelerine — pastacılık kariyerim boyunca kazandığım ödül ve sertifikaların öne çıkanları.</p>
+          </div>
+          <div class="badge"><i class="bi bi-award-fill"></i> <span id="t_awards_badge">Uluslararası Ödüllü</span></div>
+        </div>
+
+        <div class="awards-grid">
+          <div class="award-card intl" data-aos="fade-up">
+            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
+            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
+            <div class="award-card-inner">
+              <span class="award-label" id="aw1_lbl">Gümüş Madalya</span>
+              <div class="award-medallion" aria-hidden="true"><i class="bi bi-trophy-fill"></i></div>
+              <div class="award-divider" aria-hidden="true">· · ·</div>
+              <h3>IKA Culinary Olympics</h3>
+              <p class="award-org" id="aw1_org">Uluslararası · Pastry Artistic D2</p>
+              <p class="award-year" id="aw1_yr">Stuttgart · Şubat 2020</p>
+            </div>
+          </div>
+
+          <div class="award-card intl" data-aos="fade-up" data-aos-delay="80">
+            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
+            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
+            <div class="award-card-inner">
+              <span class="award-label" id="aw2_lbl">Uluslararası</span>
+              <div class="award-medallion" aria-hidden="true"><i class="bi bi-trophy-fill"></i></div>
+              <div class="award-divider" aria-hidden="true">· · ·</div>
+              <h3>IKA Culinary Olympics</h3>
+              <p class="award-org">Pastry Artistic D2</p>
+              <p class="award-year" id="aw2_yr">Stuttgart · Şubat 2024</p>
+            </div>
+          </div>
+
+          <div class="award-card" data-aos="fade-up" data-aos-delay="160">
+            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
+            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
+            <div class="award-card-inner">
+              <span class="award-label" id="aw3_lbl">Altın Madalya</span>
+              <div class="award-medallion" aria-hidden="true"><i class="bi bi-patch-check-fill"></i></div>
+              <div class="award-divider" aria-hidden="true">· · ·</div>
+              <h3 id="aw3_h3">Pastry Cup Başarı Ödülü</h3>
+              <p class="award-org">UÇPAD</p>
+              <p class="award-year">2023</p>
+            </div>
+          </div>
+
+          <div class="award-card" data-aos="fade-up" data-aos-delay="80">
+            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
+            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
+            <div class="award-card-inner">
+              <span class="award-label" id="aw4_lbl">Merit Madalyası</span>
+              <div class="award-medallion" aria-hidden="true"><i class="bi bi-award-fill"></i></div>
+              <div class="award-divider" aria-hidden="true">· · ·</div>
+              <h3 id="aw4_h3">Bakırköy Pastacılık Festivali</h3>
+              <p class="award-org" id="aw4_org">Artistic Kategorisi</p>
+              <p class="award-year" id="aw4_yr">İstanbul · 2015</p>
+            </div>
+          </div>
+
+          <div class="award-card" data-aos="fade-up" data-aos-delay="160">
+            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
+            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
+            <div class="award-card-inner">
+              <span class="award-label" id="aw5_lbl">Seviye 4</span>
+              <div class="award-medallion" aria-hidden="true"><i class="bi bi-gem"></i></div>
+              <div class="award-divider" aria-hidden="true">· · ·</div>
+              <h3 id="aw5_h3">Pastacı Mesleki Yeterlilik</h3>
+              <p class="award-org" id="aw5_org">MYK · UGETAM Onaylı</p>
+              <p class="award-year">2021</p>
+            </div>
+          </div>
+
+          <div class="award-card" data-aos="fade-up" data-aos-delay="240">
+            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
+            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
+            <div class="award-card-inner">
+              <span class="award-label">MEB</span>
+              <div class="award-medallion" aria-hidden="true"><i class="bi bi-mortarboard-fill"></i></div>
+              <div class="award-divider" aria-hidden="true">· · ·</div>
+              <h3 id="aw6_h3">Usta Öğreticilik Belgesi</h3>
+              <p class="award-org" id="aw6_org">T.C. Millî Eğitim Bakanlığı</p>
+              <p class="award-year">2022</p>
+            </div>
+          </div>
+
+          <div class="award-card" data-aos="fade-up">
+            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
+            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
+            <div class="award-card-inner">
+              <span class="award-label" id="aw7_lbl">Ustalık</span>
+              <div class="award-medallion" aria-hidden="true"><i class="bi bi-journal-check"></i></div>
+              <div class="award-divider" aria-hidden="true">· · ·</div>
+              <h3 id="aw7_h3">Pasta &amp; Tatlı Ustalık Belgesi</h3>
+              <p class="award-org" id="aw7_org">T.C. Millî Eğitim Bakanlığı</p>
+              <p class="award-year">2020</p>
+            </div>
+          </div>
+
+          <div class="award-card" data-aos="fade-up" data-aos-delay="80">
+            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
+            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
+            <div class="award-card-inner">
+              <span class="award-label" id="aw8_lbl">120 Saat</span>
+              <div class="award-medallion" aria-hidden="true"><i class="bi bi-cup-hot-fill"></i></div>
+              <div class="award-divider" aria-hidden="true">· · ·</div>
+              <h3 id="aw8_h3">Butik Çikolata Hazırlama</h3>
+              <p class="award-org" id="aw8_org">MEB Hayat Boyu Öğrenme</p>
+              <p class="award-year">2021</p>
+            </div>
+          </div>
+
+          <div class="award-card" data-aos="fade-up" data-aos-delay="160">
+            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
+            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
+            <div class="award-card-inner">
+              <span class="award-label" id="aw9_lbl">256 Saat</span>
+              <div class="award-medallion" aria-hidden="true"><i class="bi bi-flower1"></i></div>
+              <div class="award-divider" aria-hidden="true">· · ·</div>
+              <h3 id="aw9_h3">Şeker Hamuru Çiçek Yapımı</h3>
+              <p class="award-org" id="aw9_org">MEB Hayat Boyu Öğrenme</p>
+              <p class="award-year">2023</p>
+            </div>
+          </div>
+
+          <div class="award-card" data-aos="fade-up" data-aos-delay="240">
+            <span class="award-corner tl" aria-hidden="true"></span><span class="award-corner tr" aria-hidden="true"></span>
+            <span class="award-corner bl" aria-hidden="true"></span><span class="award-corner br" aria-hidden="true"></span>
+            <div class="award-card-inner">
+              <span class="award-label" id="aw10_lbl">Üniversite</span>
+              <div class="award-medallion" aria-hidden="true"><i class="bi bi-building"></i></div>
+              <div class="award-divider" aria-hidden="true">· · ·</div>
+              <h3 id="aw10_h3">Çiçek &amp; Figür Modelleme</h3>
+              <p class="award-org" id="aw10_org">İstanbul Aydın Üniversitesi</p>
+              <p class="award-year">2022</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
