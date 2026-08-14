@@ -198,7 +198,7 @@
       info_addr:      "Konum",
       info_wa_btn:    "WhatsApp'tan Yaz",
       footer_brand:   "Butiktatli",
-      footer_p:       "Butik tatlı satışları ve pastacılık eğitimleri: makaron, cupcake ve tasarım pastalar. Atölyemizde uygulamalı öğren, evinde veya işinde güvenle uygula.",
+      footer_p:       "Butik pasta satışları ve pastacılık eğitimleri: makaron, cupcake ve tasarım pastalar. Atölyemizde uygulamalı öğren, evinde veya işinde güvenle uygula.",
       footer_small:   "Sorular için WhatsApp'tan yazabilir veya formu kullanabilirsiniz.",
       reviews_tag:    "Yorumlar",
       reviews_h2:     "Müşterilerimiz ne diyor?",
