@@ -83,5 +83,6 @@ const SALES_IMAGES = [
   "sales-47.jpeg",
   "sales-48.jpeg",
   "sales-49.jpeg",
-  "sales-50.jpeg"
+  "sales-50.jpeg",
+  "sales-51.jpeg"
 ];
