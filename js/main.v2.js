@@ -902,7 +902,7 @@
 
     new Swiper(".salesSwiper", {
       slidesPerView: 1, spaceBetween: 12,
-      loop: true, watchOverflow: true,
+      loop: false, rewind: true, watchOverflow: true,
       observer: true, observeParents: true,
       touchStartPreventDefault: false,
       breakpoints: {
