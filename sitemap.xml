@@ -1,21 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://butiktatli.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url><loc>https://butiktatli.com/anneler-gunu-pastasi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://butiktatli.com/dogum-gunu-pastasi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://butiktatli.com/nisan-pastasi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://butiktatli.com/cupcake.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://butiktatli.com/makaron.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://butiktatli.com/cocuk-pastasi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://butiktatli.com/cicekli-pasta.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://butiktatli.com/kremali-pasta.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://butiktatli.com/resim-baski-pasta.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://butiktatli.com/sevgililer-gunu-pastasi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://butiktatli.com/taraftar-spor-pastasi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://butiktatli.com/vegan-pasta.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://butiktatli.com/cakepops.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <url>
+    <loc>https://butiktatli.com/anneler-gunu-pastasi.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://butiktatli.com/img/anneler-wa-01.jpeg</image:loc><image:title>Anneler Günü Pastası Özel Tasarım İstanbul</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/anneler-wa-02.jpeg</image:loc><image:title>Anneye Özel Kişiselleştirilmiş Pasta</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/anneler-wa-03.jpeg</image:loc><image:title>Anneler Günü Pasta Siparişi Butiktatli</image:title></image:image>
+  </url>
+
+  <url>
+    <loc>https://butiktatli.com/dogum-gunu-pastasi.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://butiktatli.com/img/dogum-wa-01.jpeg</image:loc><image:title>Doğum Günü Pastası Özel Tasarım İstanbul</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/dogum-wa-02.jpeg</image:loc><image:title>Kişiselleştirilmiş Doğum Günü Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-05.jpeg</image:loc><image:title>Figürlü Doğum Günü Pastası Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-06.jpeg</image:loc><image:title>Doğum Günü Pastası İstanbul Sipariş</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/dogum-wa-03.jpeg</image:loc><image:title>Resim Baskılı Doğum Günü Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/dogum-wa-04.jpeg</image:loc><image:title>Özel Tasarım Doğum Günü Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-07.jpeg</image:loc><image:title>Harf Yazılı Doğum Günü Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-12.jpeg</image:loc><image:title>Buttercream Doğum Günü Pastası İstanbul</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/dogum-wa-05.jpeg</image:loc><image:title>3D Figürlü Doğum Günü Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/dogum-wa-06.jpeg</image:loc><image:title>Doğum Günü Pastası Kutlama</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-15.jpeg</image:loc><image:title>Çocuk Doğum Günü Pastası Sipariş</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-30.jpeg</image:loc><image:title>Dekorlu Doğum Günü Pastası İstanbul</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-33.jpeg</image:loc><image:title>Yetişkin Doğum Günü Pastası İstanbul</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-47.jpeg</image:loc><image:title>Özel Gün Pastası Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/dogum-wa-07.jpeg</image:loc><image:title>Çiçekli Doğum Günü Pastası Özel Tasarım İstanbul</image:title></image:image>
+  </url>
+
+  <url>
+    <loc>https://butiktatli.com/cocuk-pastasi.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://butiktatli.com/img/cocuk-wa-01.jpeg</image:loc><image:title>Çocuk Pastası Sipariş İstanbul Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/cocuk-wa-02.jpeg</image:loc><image:title>Çizgi Film Karakterli Çocuk Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-09.jpeg</image:loc><image:title>1 Yaş Doğum Günü Pastası İstanbul</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/cocuk-wa-03.jpeg</image:loc><image:title>Figürlü Çocuk Doğum Günü Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-11.jpeg</image:loc><image:title>Renkli Tema Çocuk Pastası Sipariş</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/cocuk-wa-04.jpeg</image:loc><image:title>Sevimli Çocuk Pastası Özel Tasarım</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-12.jpeg</image:loc><image:title>Çocuk Doğum Günü Pastası Butik</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/cocuk-wa-05.jpeg</image:loc><image:title>Karakter Figürlü Çocuk Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-13.jpeg</image:loc><image:title>Tema Çocuk Pastası İstanbul</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/cocuk-wa-06.jpeg</image:loc><image:title>Süslü Çocuk Doğum Günü Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-24.jpeg</image:loc><image:title>Prenses Temalı Çocuk Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/cocuk-wa-07.jpeg</image:loc><image:title>Araba Temalı Çocuk Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-31.jpeg</image:loc><image:title>Unicorn Çocuk Pastası Sipariş</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/cocuk-wa-08.jpeg</image:loc><image:title>Gökkuşağı Çocuk Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-38.jpeg</image:loc><image:title>Özel Tasarım Çocuk Pastası Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-39.jpeg</image:loc><image:title>Çocuk Pastası Renkli Dekorasyon</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-43.jpeg</image:loc><image:title>Balon Temalı Çocuk Doğum Günü Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-44.jpeg</image:loc><image:title>Kişiselleştirilmiş Çocuk Pastası</image:title></image:image>
+  </url>
+
+  <url>
+    <loc>https://butiktatli.com/taraftar-spor-pastasi.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://butiktatli.com/img/spor-wa-01.jpeg</image:loc><image:title>Taraftar Pastası İstanbul Özel Sipariş</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/spor-wa-02.jpeg</image:loc><image:title>Spor Temalı Pasta Futbol</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/spor-wa-03.jpeg</image:loc><image:title>Takım Renkli Doğum Günü Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/spor-wa-04.jpeg</image:loc><image:title>Forma Temalı Taraftar Pasta Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-48.jpeg</image:loc><image:title>Özel Tasarım Spor Pastası İstanbul</image:title></image:image>
+  </url>
+
+  <url>
+    <loc>https://butiktatli.com/nisan-pastasi.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://butiktatli.com/img/dugun-wa-01.jpeg</image:loc><image:title>Nişan Pastası İstanbul Özel Sipariş</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-26.jpeg</image:loc><image:title>Düğün Pastası Özel Tasarım Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/dugun-wa-02.jpeg</image:loc><image:title>Çiftlere Özel Nişan Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-32.jpeg</image:loc><image:title>Kişiselleştirilmiş Nişan Pastası</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/dugun-wa-03.jpeg</image:loc><image:title>Zarif Nişan Pastası İstanbul</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-14.jpeg</image:loc><image:title>Katmanlı Düğün Pastası Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-22.jpeg</image:loc><image:title>Çiçekli Nişan Pastası Sipariş</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-51.jpeg</image:loc><image:title>Nişan Söz Pastası Özel Tasarım</image:title></image:image>
+  </url>
+
+  <url>
+    <loc>https://butiktatli.com/cupcake.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://butiktatli.com/img/cupcake-wa-01.jpeg</image:loc><image:title>Butik Cupcake Sipariş İstanbul</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/cupcake-wa-02.jpeg</image:loc><image:title>Özel Tasarım Cupcake Doğum Günü</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/gallery-06.jpeg</image:loc><image:title>Buttercream Cupcake Dekorasyon</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/gallery-07.jpeg</image:loc><image:title>Renkli Cupcake Set Siparişi</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-17.jpeg</image:loc><image:title>Kişiselleştirilmiş Cupcake Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/cupcake-wa-03.jpeg</image:loc><image:title>Çiçekli Özel Cupcake Kutu Sipariş İstanbul</image:title></image:image>
+  </url>
+
+  <url>
+    <loc>https://butiktatli.com/makaron.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://butiktatli.com/img/makaron-wa-01.jpeg</image:loc><image:title>Butik Makaron Sipariş İstanbul</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/makaron-wa-02.jpeg</image:loc><image:title>El Yapımı Renkli Makaron</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-29.jpeg</image:loc><image:title>French Makaron Özel Sipariş Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/makaron-wa-03.jpeg</image:loc><image:title>Renkli Butik Makaron Üretim İstanbul</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/makaron-wa-04.jpeg</image:loc><image:title>French Makaron Özel Sipariş</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/makaron-wa-05.jpeg</image:loc><image:title>Makaron Sipariş Butiktatli İstanbul</image:title></image:image>
+  </url>
+
+  <url>
+    <loc>https://butiktatli.com/cicekli-pasta.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://butiktatli.com/img/cicekli-wa-01.jpeg</image:loc><image:title>Çiçekli Pasta Sipariş İstanbul Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/cicekli-wa-02.jpeg</image:loc><image:title>Buttercream Çiçek Pasta Özel Tasarım</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-05.jpeg</image:loc><image:title>Çiçekli Butik Pasta Özel Gün</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-08.jpeg</image:loc><image:title>Şeker Çiçekli Pasta</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-25.jpeg</image:loc><image:title>Taze Çiçekli Pasta İstanbul</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-26.jpeg</image:loc><image:title>El Yapımı Çiçekli Pasta Sipariş</image:title></image:image>
+  </url>
+
+  <url>
+    <loc>https://butiktatli.com/kremali-pasta.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://butiktatli.com/img/kremali-wa-01.jpeg</image:loc><image:title>Kremalı Pasta İstanbul Sipariş Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-27.jpeg</image:loc><image:title>Buttercream Kremalı Pasta Özel Tasarım</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-34.jpeg</image:loc><image:title>Çikolata Ganajlı Kremalı Pasta</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-36.jpeg</image:loc><image:title>Katmanlı Kremalı Pasta Sipariş</image:title></image:image>
+  </url>
+
+  <url>
+    <loc>https://butiktatli.com/resim-baski-pasta.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://butiktatli.com/img/sales-02.jpeg</image:loc><image:title>Resim Baskılı Pasta Sipariş İstanbul</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-03.jpeg</image:loc><image:title>Fotoğraf Baskılı Pasta Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-10.jpeg</image:loc><image:title>Yenilebilir Baskı Pasta Özel Tasarım</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-47.jpeg</image:loc><image:title>Kişiselleştirilmiş Resim Baskı Pasta</image:title></image:image>
+  </url>
+
+  <url>
+    <loc>https://butiktatli.com/sevgililer-gunu-pastasi.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://butiktatli.com/img/sales-35.jpeg</image:loc><image:title>Sevgililer Günü Pastası İstanbul Sipariş</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-41.jpeg</image:loc><image:title>14 Şubat Özel Pasta Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/dogum-wa-07.jpeg</image:loc><image:title>Sevgililer Günü Özel Tasarım Pasta İstanbul</image:title></image:image>
+  </url>
+
+  <url>
+    <loc>https://butiktatli.com/vegan-pasta.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://butiktatli.com/img/vegan-wa-01.jpeg</image:loc><image:title>Vegan Pasta Sipariş İstanbul Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/vegan-wa-02.jpeg</image:loc><image:title>Bitkisel Vegan Pasta Özel Gün</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-28.jpeg</image:loc><image:title>Yumurtasız Sütsüz Vegan Butik Pasta</image:title></image:image>
+  </url>
+
+  <url>
+    <loc>https://butiktatli.com/cakepops.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://butiktatli.com/img/cakepops-wa-01.jpeg</image:loc><image:title>Cake Pops Sipariş İstanbul Butiktatli</image:title></image:image>
+    <image:image><image:loc>https://butiktatli.com/img/sales-45.jpeg</image:loc><image:title>Pop Kek Özel Tasarım Tatlı Masası</image:title></image:image>
+  </url>
 </urlset>
