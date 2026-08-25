@@ -1556,9 +1556,6 @@ footer { padding: 48px 0 60px; }
   font-size: clamp(2.2rem, 9vw, 5rem);
   font-weight: 900;
   letter-spacing: -3px;
-  opacity: 0;
-  transform: translateY(18px);
-  animation: curtainLogoIn 0.35s 0.08s cubic-bezier(.34,1.56,.64,1) forwards;
 }
 
 .page-curtain-dots {
