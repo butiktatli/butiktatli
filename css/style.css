@@ -1530,60 +1530,6 @@ footer { padding: 48px 0 60px; }
 }
 
 /* =========================================================
-   PAGE CURTAIN
+   PAGE CURTAIN — removed
    ========================================================= */
-.page-curtain {
-  position: fixed;
-  inset: 0;
-  z-index: 99999;
-  background: linear-gradient(135deg, #e8437b 0%, #f07098 45%, #ffb8ce 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.page-curtain.is-lifting {
-  animation: curtainLift 1s 0.5s cubic-bezier(0.76, 0, 0.24, 1) forwards;
-}
-.page-curtain.is-gone { display: none; }
-@keyframes curtainLift {
-  from { transform: translateY(0); }
-  to   { transform: translateY(-100%); }
-}
-
-.page-curtain-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 22px;
-}
-
-.page-curtain-logo {
-  color: #fff;
-  font-size: clamp(2.2rem, 9vw, 5rem);
-  font-weight: 900;
-  letter-spacing: -3px;
-}
-
-.page-curtain-dots {
-  display: flex;
-  gap: 9px;
-}
-.page-curtain-dots span {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: rgba(255,255,255,.55);
-  animation: curtainDot 0.55s ease infinite alternate;
-}
-.page-curtain-dots span:nth-child(2) { animation-delay: .18s; }
-.page-curtain-dots span:nth-child(3) { animation-delay: .36s; }
-
-@keyframes curtainLogoIn {
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes curtainDot {
-  to { background: #fff; transform: translateY(-4px) scale(1.15); }
-}
 
