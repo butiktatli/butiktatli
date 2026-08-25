@@ -144,6 +144,10 @@
 
   <!-- App CSS -->
   <link rel="stylesheet" href="css/style.css?v=24" />
+  <!-- Critical: curtain inline so it paints on first frame -->
+  <style>
+    #pageCurtain{position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999;background:linear-gradient(135deg,#e8437b 0%,#f07098 45%,#ffb8ce 100%);transform:translateY(0);-webkit-backface-visibility:hidden;backface-visibility:hidden;will-change:transform;}
+  </style>
 
   <!-- Google tag (gtag.js) - Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJGCND2G6V"></script>
