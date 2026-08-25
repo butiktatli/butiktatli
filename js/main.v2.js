@@ -1004,7 +1004,11 @@
           <div class="video-embed-wrap">
             <video id="vplayer${n}" controls controlsList="nodownload" muted style="width:100%;height:100%;border-radius:16px;background:#000;" src="videos/${f}"></video>
           </div>
-          <button class="video-close" onclick="closeVideo(${n})" aria-label="Kapat"><i class="bi bi-x-lg"></i> Kapat</button>
+          <div class="video-nav">
+            <button class="video-nav-btn" onclick="prevVideo(${n})" aria-label="Önceki video" ${n === 1 ? 'disabled' : ''}><i class="bi bi-chevron-left"></i> Önceki</button>
+            <button class="video-close" onclick="closeVideo(${n})" aria-label="Kapat"><i class="bi bi-x-lg"></i> Kapat</button>
+            <button class="video-nav-btn" onclick="nextVideo(${n})" aria-label="Sonraki video" ${n === VIDEOS.length ? 'disabled' : ''}>Sonraki <i class="bi bi-chevron-right"></i></button>
+          </div>
         </div>
       </div>`;
     }).join("");
@@ -1034,6 +1038,14 @@
     player.pause();
     card.classList.remove("is-open");
     if (openVideoId === id) openVideoId = null;
+  };
+
+  window.prevVideo = (id) => {
+    if (id > 1) { closeVideo(id); openVideo(id - 1); }
+  };
+
+  window.nextVideo = (id) => {
+    if (id < VIDEOS.length) { closeVideo(id); openVideo(id + 1); }
   };
 
   /* =================== Scroll progress ring =================== */
