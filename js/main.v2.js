@@ -923,8 +923,6 @@
   /* =================== Page Curtain =================== */
   const curtain = document.getElementById("pageCurtain");
   if (curtain) {
-    document.documentElement.style.overflow = "hidden";
-
     const liftCurtain = () => {
       if (window.gsap) {
         gsap.to(curtain, {
@@ -932,12 +930,10 @@
           duration: 1,
           delay: 0.5,
           ease: "power4.inOut",
-          onStart: () => { document.documentElement.style.overflow = ""; },
           onComplete: () => curtain.classList.add("is-gone")
         });
       } else {
         setTimeout(() => {
-          document.documentElement.style.overflow = "";
           curtain.style.transition = "transform 1s cubic-bezier(0.76,0,0.24,1)";
           curtain.style.transform = "translateY(-100%)";
           setTimeout(() => curtain.classList.add("is-gone"), 1050);
