@@ -924,21 +924,8 @@
   const curtain = document.getElementById("pageCurtain");
   if (curtain) {
     const liftCurtain = () => {
-      if (window.gsap) {
-        gsap.to(curtain, {
-          y: "-100%",
-          duration: 1,
-          delay: 0.5,
-          ease: "power4.inOut",
-          onComplete: () => curtain.classList.add("is-gone")
-        });
-      } else {
-        setTimeout(() => {
-          curtain.style.transition = "transform 1s cubic-bezier(0.76,0,0.24,1)";
-          curtain.style.transform = "translateY(-100%)";
-          setTimeout(() => curtain.classList.add("is-gone"), 1050);
-        }, 500);
-      }
+      curtain.classList.add("is-lifting");
+      setTimeout(() => curtain.classList.add("is-gone"), 1600);
     };
     if (document.readyState === "loading") {
       document.addEventListener("DOMContentLoaded", liftCurtain);
