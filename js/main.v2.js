@@ -936,8 +936,8 @@
         setTimeout(() => {
           curtain.style.transition = "transform 1s cubic-bezier(0.76,0,0.24,1)";
           curtain.style.transform = "translateY(-100%)";
-          setTimeout(() => curtain.classList.add("is-gone"), 380);
-        }, 0);
+          setTimeout(() => curtain.classList.add("is-gone"), 1050);
+        }, 500);
       }
     };
     if (document.readyState === "loading") {
