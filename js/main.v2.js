@@ -920,11 +920,74 @@
     GLightbox({ selector: ".glightbox", touchNavigation: true, loop: true, openEffect: "zoom", closeEffect: "fade", moreLength: 0 });
   }
 
+  /* =================== Page Curtain =================== */
+  const curtain = document.getElementById("pageCurtain");
+  if (curtain) {
+    const liftCurtain = () => {
+      if (window.gsap) {
+        gsap.to(curtain, {
+          y: "-100%",
+          duration: 0.35,
+          delay: 0.3,
+          ease: "power4.inOut",
+          onComplete: () => curtain.classList.add("is-gone")
+        });
+      } else {
+        setTimeout(() => {
+          curtain.style.transition = "transform 0.35s cubic-bezier(0.76,0,0.24,1)";
+          curtain.style.transform = "translateY(-100%)";
+          setTimeout(() => curtain.classList.add("is-gone"), 380);
+        }, 0);
+      }
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", liftCurtain);
+    } else {
+      liftCurtain();
+    }
+  }
+
   if (window.gsap && window.ScrollTrigger) {
     gsap.registerPlugin(ScrollTrigger);
+
+
+    /* --- Parallax --- */
     gsap.utils.toArray("[data-parallax]").forEach(el => {
-      gsap.to(el, { y: 22, ease: "none", scrollTrigger: { trigger: el, start: "top bottom", end: "bottom top", scrub: true } });
+      const speed = parseFloat(el.dataset.parallax) || -30;
+      gsap.to(el, { y: speed, ease: "none", scrollTrigger: { trigger: el, start: "top bottom", end: "bottom top", scrub: true } });
     });
+
+    /* --- Magnetic buttons (desktop only) --- */
+    if (!window.matchMedia("(hover: none)").matches) {
+      document.querySelectorAll(".btn-primary, .hero-actions .btn").forEach(btn => {
+        btn.addEventListener("mousemove", e => {
+          const r = btn.getBoundingClientRect();
+          const x = (e.clientX - r.left - r.width  / 2) * 0.38;
+          const y = (e.clientY - r.top  - r.height / 2) * 0.38;
+          gsap.to(btn, { x, y, duration: 0.25, ease: "power2.out" });
+        });
+        btn.addEventListener("mouseleave", () => {
+          gsap.to(btn, { x: 0, y: 0, duration: 0.6, ease: "elastic.out(1, 0.5)" });
+        });
+      });
+    }
+
+    /* --- 3D card tilt (desktop only) --- */
+    if (!window.matchMedia("(hover: none)").matches) {
+      document.querySelectorAll(".card.course").forEach(card => {
+        card.style.willChange = "transform";
+        card.style.transition = "box-shadow .3s ease"; /* remove CSS transform transition so GSAP controls it alone */
+        card.addEventListener("mousemove", e => {
+          const r   = card.getBoundingClientRect();
+          const rotY = ((e.clientX - r.left - r.width  / 2) / (r.width  / 2)) * 10;
+          const rotX = ((e.clientY - r.top  - r.height / 2) / (r.height / 2)) * -10;
+          gsap.to(card, { rotateX: rotX, rotateY: rotY, transformPerspective: 700, duration: 0.3, ease: "power2.out" });
+        });
+        card.addEventListener("mouseleave", () => {
+          gsap.to(card, { rotateX: 0, rotateY: 0, duration: 0.65, ease: "elastic.out(1, 0.4)" });
+        });
+      });
+    }
   }
 
   /* =================== Contact form =================== */
@@ -1106,10 +1169,10 @@
     }
 
     function spawnCrumbs() {
-      if (!catWrap || !catWrap.classList.contains('ccat-visible')) return;
+      if (!catWrap || !catWrap.classList.contains('ccat-visible') || catWrap.dataset.gone) return;
       const rect = catWrap.getBoundingClientRect();
       const cx   = rect.left + rect.width  * .52;
-      const cy   = rect.top  + rect.height * .44;
+      const cy   = rect.top  + rect.height * .64;
       for (let i = 0; i < 6; i++) {
         const c = document.createElement('div');
         c.className = 'ccat-crumb';
@@ -1164,6 +1227,27 @@
 
     window.addEventListener('scroll', updateCat, { passive: true });
     updateCat();
+
+    /* --- Click: 3 jumps → turn → walk off --- */
+    catWrap.addEventListener('click', () => {
+      if (catWrap.dataset.gone || !catWrap.classList.contains('ccat-visible')) return;
+      catWrap.dataset.gone = '1';
+      catWrap.style.pointerEvents = 'none';
+
+      const hint = catWrap.querySelector('.ccat-hint');
+      if (hint && window.gsap) gsap.to(hint, { opacity: 0, duration: 0.15 });
+
+      if (!window.gsap) return;
+      const tl = gsap.timeline();
+      for (let i = 0; i < 3; i++) {
+        tl.to(catSvg, { y: -32, duration: 0.21, ease: 'power2.out' })
+          .to(catSvg, { y: 0,   duration: 0.19, ease: 'bounce.out' });
+      }
+      tl.to(catSvg, { scaleX: -1, duration: 0.28, ease: 'power2.inOut' });
+      tl.to(catWrap, { x: -200, duration: 0.65, ease: 'power2.in',
+        onComplete: () => { catWrap.style.display = 'none'; }
+      });
+    });
   })();
 
 })();
