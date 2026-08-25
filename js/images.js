@@ -24,8 +24,7 @@ const VIDEOS = [
   "video4.mp4",
   "video5.mp4",
   "video6.mp4",
-  "video7.mp4",
-  "video8.mp4"
+  "video7.mp4"
 ];
 
 /* -------------------------------------------------------
