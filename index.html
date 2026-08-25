@@ -150,9 +150,12 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://unpkg.com" crossorigin>
 
-  <!-- App CSS — non-blocking (perde inline, yüklenince devreye girer) -->
-  <link rel="stylesheet" href="css/style.css?v=24" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="css/style.css?v=24"></noscript>
+  <!-- LCP hero preload -->
+  <link rel="preload" as="image" href="img/herobanner.webp" media="(min-width:769px)" fetchpriority="high">
+  <link rel="preload" as="image" href="img/hero_banner_mb.webp" media="(max-width:768px)" fetchpriority="high">
+
+  <!-- App CSS — render-blocking (CLS'yi önler) -->
+  <link rel="stylesheet" href="css/style.css?v=24" />
 
   <!-- Vendor CSS — non-blocking (perde kapıyor, yüklenince devreye girer) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
@@ -203,7 +206,10 @@
     <div class="container">
       <div class="nav-inner" aria-label="Üst menü">
         <a class="brand" href="#" aria-label="Anasayfa">
-          <img class="brand-logo" src="img/logo.png" alt="Butiktatli logo" loading="eager" />
+          <picture>
+            <source srcset="img/logo.webp" type="image/webp">
+            <img class="brand-logo" src="img/logo.png" alt="Butiktatli logo" loading="eager" width="160" height="48">
+          </picture>
           <div>
             <strong id="t_brand">Butiktatli</strong>
             <span id="t_brand_sub">Boutique Dessert Shop</span>
@@ -284,10 +290,16 @@
     <section class="hero" aria-label="Hero">
       <!-- Floating sparkles -->
 	  <div class="hero-bg" aria-hidden="true" data-parallax="-28">
-    <img src="img/herobanner.png" alt="Hero Arkaplan">
+    <picture>
+      <source srcset="img/herobanner.webp" type="image/webp">
+      <img src="img/herobanner.png" alt="Hero Arkaplan" width="1717" height="916" fetchpriority="high" loading="eager">
+    </picture>
   </div>
   <div class="hero-bg-mobile" aria-hidden="true" data-parallax="-28">
-    <img src="img/hero_banner_mb.png" alt="">
+    <picture>
+      <source srcset="img/hero_banner_mb.webp" type="image/webp">
+      <img src="img/hero_banner_mb.png" alt="" width="1024" height="1024" fetchpriority="high" loading="eager">
+    </picture>
   </div>
 
       <div class="sparkle s1" aria-hidden="true" data-parallax="-55"><i class="bi bi-stars"></i></div>
@@ -351,7 +363,10 @@
 
         <div class="grid-2">
           <div class="card about-media" data-aos="fade-right">
-            <img src="img/about-illustration.png" alt="Butiktatli pastacılık atölyesi İstanbul" loading="lazy" />
+            <picture>
+              <source srcset="img/about-illustration.webp" type="image/webp">
+              <img src="img/about-illustration.png" alt="Butiktatli pastacılık atölyesi İstanbul" loading="lazy" width="860" height="860">
+            </picture>
           </div>
 
           <div class="card about-copy" data-aos="fade-left">
@@ -591,7 +606,10 @@
 
           <article class="card course" data-aos="fade-up" data-aos-delay="240">
             <div class="course-img-wrap">
-              <img src="img/course-genel.png" alt="Genel Paket Eğitimi İstanbul — Butiktatli" loading="lazy" />
+              <picture>
+                <source srcset="img/course-genel.webp" type="image/webp">
+                <img src="img/course-genel.png" alt="Genel Paket Eğitimi İstanbul — Butiktatli" loading="lazy" width="800" height="600">
+              </picture>
               <div class="course-overlay">
                 <a class="btn btn-primary" href="#contact"><i class="bi bi-calendar2-week"></i> <span id="t_c4_register">Kayıt Ol</span></a>
               </div>
@@ -1081,7 +1099,10 @@
       <div class="container footer-inner">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="img/logo.png" alt="Butiktatli" width="32" height="32" loading="lazy" />
+            <picture>
+              <source srcset="img/logo.webp" type="image/webp">
+              <img src="img/logo.png" alt="Butiktatli" width="32" height="32" loading="lazy">
+            </picture>
             <strong>© <span id="year"></span> <span id="t_footer_brand">Butiktatli</span>. <span id="t_footer_copyright">Tüm hakları saklıdır.</span></strong>
           </div>
           <p id="t_footer_p">Butik tatlı satışları ve pastacılık eğitimleri: makaron, cupcake ve tasarım pastalar. Atölyemizde uygulamalı öğren, evinde veya işinde güvenle uygula.</p>
