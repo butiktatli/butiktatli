@@ -1158,6 +1158,7 @@
     function spawnCrumbs() {
       if (!catWrap || !catWrap.classList.contains('ccat-visible') || catWrap.dataset.gone) return;
       const rect = catWrap.getBoundingClientRect();
+      if (rect.width === 0) return;
       const cx   = rect.left + rect.width  * .52;
       const cy   = rect.top  + rect.height * .64;
       for (let i = 0; i < 6; i++) {
