@@ -1540,12 +1540,17 @@ footer { padding: 48px 0 60px; }
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(0);
-  will-change: transform;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+.page-curtain.is-lifting {
+  animation: curtainLift 1s 0.5s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+}
 .page-curtain.is-gone { display: none; }
+@keyframes curtainLift {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-100%); }
+}
 
 .page-curtain-inner {
   display: flex;
