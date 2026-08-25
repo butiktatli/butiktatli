@@ -157,6 +157,15 @@
 </head>
 
 <body>
+
+  <!-- PAGE CURTAIN -->
+  <div id="pageCurtain" class="page-curtain" aria-hidden="true">
+    <div class="page-curtain-inner">
+      <div class="page-curtain-logo">butiktatli</div>
+      <div class="page-curtain-dots"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
   <a class="skip-link" href="#main" id="t_skip">İçeriğe atla</a>
 
   <!-- Floating bg decorations -->
@@ -253,18 +262,18 @@
     <!-- HERO -->
     <section class="hero" aria-label="Hero">
       <!-- Floating sparkles -->
-	  <div class="hero-bg" aria-hidden="true">
+	  <div class="hero-bg" aria-hidden="true" data-parallax="-28">
     <img src="img/herobanner.png" alt="Hero Arkaplan">
   </div>
-  <div class="hero-bg-mobile" aria-hidden="true">
+  <div class="hero-bg-mobile" aria-hidden="true" data-parallax="-28">
     <img src="img/hero_banner_mb.png" alt="">
   </div>
 
-      <div class="sparkle s1" aria-hidden="true"><i class="bi bi-stars"></i></div>
-      <div class="sparkle s2" aria-hidden="true"><i class="bi bi-heart-fill"></i></div>
-      <div class="sparkle s3" aria-hidden="true"><i class="bi bi-star-fill"></i></div>
-      <div class="sparkle s4" aria-hidden="true"><i class="bi bi-flower1"></i></div>
-      <div class="sparkle s5" aria-hidden="true"><i class="bi bi-gem"></i></div>
+      <div class="sparkle s1" aria-hidden="true" data-parallax="-55"><i class="bi bi-stars"></i></div>
+      <div class="sparkle s2" aria-hidden="true" data-parallax="-80"><i class="bi bi-heart-fill"></i></div>
+      <div class="sparkle s3" aria-hidden="true" data-parallax="-45"><i class="bi bi-star-fill"></i></div>
+      <div class="sparkle s4" aria-hidden="true" data-parallax="-70"><i class="bi bi-flower1"></i></div>
+      <div class="sparkle s5" aria-hidden="true" data-parallax="-38"><i class="bi bi-gem"></i></div>
 
       <div class="container hero-centered">
         <div class="kicker hero-anim hero-anim-1" id="t_kicker">
@@ -1091,6 +1100,26 @@
 
 <!-- Cookie Cat -->
 <div id="cookie-cat" aria-hidden="true">
+  <div class="ccat-hint" aria-hidden="true">
+    <!-- viewBox 95×110; cat SVG starts at (14,52), size 56×78px, center≈(42,91) -->
+    <svg class="ccat-hint-svg" viewBox="0 0 95 110" width="95" height="110" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <!-- 1: Kulak hizası — yatay sola ok -->
+      <g class="ccat-ha">
+        <path d="M93,65 C89,62 86,68 79,65" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+        <polyline points="83,61 77,65 83,69" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <!-- 2: Orta — yatay sola ok -->
+      <g class="ccat-ha">
+        <path d="M93,80 C89,77 86,83 79,80" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+        <polyline points="83,76 77,80 83,84" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <!-- 3: Alt — yatay sola ok -->
+      <g class="ccat-ha">
+        <path d="M93,95 C89,92 86,98 79,95" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+        <polyline points="83,91 77,95 83,99" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </svg>
+  </div>
   <svg id="ccat-svg" viewBox="0 0 120 168" xmlns="http://www.w3.org/2000/svg" overflow="visible">
     <!-- Tail (behind body, striped) -->
     <path d="M26,160 Q-2,146 4,122 Q9,102 27,114" fill="none" stroke="#f2cdd8" stroke-width="13" stroke-linecap="round">
