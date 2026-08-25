@@ -920,20 +920,6 @@
     GLightbox({ selector: ".glightbox", touchNavigation: true, loop: true, openEffect: "zoom", closeEffect: "fade", moreLength: 0 });
   }
 
-  /* =================== Page Curtain =================== */
-  const curtain = document.getElementById("pageCurtain");
-  if (curtain) {
-    const liftCurtain = () => {
-      curtain.classList.add("is-lifting");
-      setTimeout(() => curtain.classList.add("is-gone"), 1600);
-    };
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", liftCurtain);
-    } else {
-      liftCurtain();
-    }
-  }
-
   if (window.gsap && window.ScrollTrigger) {
     gsap.registerPlugin(ScrollTrigger);
 
