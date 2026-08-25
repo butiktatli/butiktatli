@@ -927,14 +927,14 @@
       if (window.gsap) {
         gsap.to(curtain, {
           y: "-100%",
-          duration: 0.35,
-          delay: 0.3,
+          duration: 1,
+          delay: 0.5,
           ease: "power4.inOut",
           onComplete: () => curtain.classList.add("is-gone")
         });
       } else {
         setTimeout(() => {
-          curtain.style.transition = "transform 0.35s cubic-bezier(0.76,0,0.24,1)";
+          curtain.style.transition = "transform 1s cubic-bezier(0.76,0,0.24,1)";
           curtain.style.transform = "translateY(-100%)";
           setTimeout(() => curtain.classList.add("is-gone"), 380);
         }, 0);
