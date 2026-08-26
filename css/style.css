@@ -1533,3 +1533,8 @@ footer { padding: 48px 0 60px; }
    PAGE CURTAIN — removed
    ========================================================= */
 
+/* Mobilde scroll sırasında ghost hover flaşını önler */
+@media (hover: none) {
+  .zoom-icon { opacity: 0 !important; }
+}
+
