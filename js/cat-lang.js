@@ -33,7 +33,8 @@ var C={
       'sevgililer-gunu-pastasi.html':'Sevgililer Günü Pastaları',
       'taraftar-spor-pastasi.html':'Taraftar ve Spor Pastaları',
       'vegan-pasta.html':'Vegan Pastalar',
-      'cakepops.html':'Cake Pops'
+      'cakepops.html':'Cake Pops',
+      'maket-pasta.html':'Maket Pasta'
     }
   },
   en:{
@@ -64,7 +65,8 @@ var C={
       'sevgililer-gunu-pastasi.html':"Valentine's Day Cakes",
       'taraftar-spor-pastasi.html':'Fan & Sports Cakes',
       'vegan-pasta.html':'Vegan Cakes',
-      'cakepops.html':'Cake Pops'
+      'cakepops.html':'Cake Pops',
+      'maket-pasta.html':'Dummy / Display Cakes'
     }
   }
 };
