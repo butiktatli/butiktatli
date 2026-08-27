@@ -226,4 +226,10 @@
     <image:image><image:loc>https://butiktatli.com/img/cakepops-wa-04.jpg</image:loc><image:title>Çikolata Kaplı Cake Pops İstanbul</image:title></image:image>
     <image:image><image:loc>https://butiktatli.com/img/cakepops-wa-05.jpg</image:loc><image:title>Dekoratif Pop Kek Sipariş İstanbul</image:title></image:image>
   </url>
+
+  <url>
+    <loc>https://butiktatli.com/maket-pasta.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
