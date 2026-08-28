@@ -27,7 +27,7 @@
   <meta name="twitter:title" content="Anneler Günü Pastası | İstanbul Özel Sipariş | Butiktatli" />
   <meta name="twitter:description" content="İstanbul'da anneler günü pastası siparişi. Annenize özel kişiselleştirilmiş tasarım pastalar. WhatsApp ile kolayca sipariş verin: +90 535 746 63 31" />
   <meta name="twitter:image" content="https://butiktatli.com/img/anneler-wa-01.webp" />  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
   <link rel="stylesheet" href="css/style.css?v=6" />
   <style>
     .cat-hero { padding: 100px 0 48px; text-align: center; }
@@ -67,7 +67,7 @@
     gtag('config', 'G-RJGCND2G6V');
     gtag('config', 'AW-18276899176');
   </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css"></noscript>
   <style>.photo-slot{position:relative}.photo-slot a{display:block;border-radius:16px;overflow:hidden}.zoom-icon{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.3);opacity:0;transition:opacity .25s;pointer-events:none}.zoom-icon i{color:#fff;font-size:1.6rem}.photo-slot:hover .zoom-icon{opacity:1}</style>
   <script type="application/ld+json">
   {
@@ -79,6 +79,7 @@
     ]
   }
   </script>
+  <link rel="preload" as="image" href="img/anneler-wa-01.webp" fetchpriority="high" />
 </head>
 <body>
   <div class="float-deco" aria-hidden="true">
@@ -180,7 +181,7 @@
       </div>
 
       <div class="photo-grid">
-        <div class="photo-slot"><a class="glightbox" href="img/anneler-wa-01.webp"><img src="img/anneler-wa-01.webp" alt="Anneler günü pastası özel tasarım İstanbul" loading="lazy" /><span class="zoom-icon"><i class="bi bi-zoom-in"></i></span></a></div>
+        <div class="photo-slot"><a class="glightbox" href="img/anneler-wa-01.webp"><img src="img/anneler-wa-01.webp" alt="Anneler günü pastası özel tasarım İstanbul" loading="eager" fetchpriority="high" /><span class="zoom-icon"><i class="bi bi-zoom-in"></i></span></a></div>
         <div class="photo-slot"><a class="glightbox" href="img/anneler-wa-02.webp"><img src="img/anneler-wa-02.webp" alt="Anneye özel kişiselleştirilmiş pasta" loading="lazy" /><span class="zoom-icon"><i class="bi bi-zoom-in"></i></span></a></div>
         <div class="photo-slot"><a class="glightbox" href="img/anneler-wa-03.webp"><img src="img/anneler-wa-03.webp" alt="Anneler günü pasta siparişi butiktatli" loading="lazy" /><span class="zoom-icon"><i class="bi bi-zoom-in"></i></span></a></div>
       </div>
