@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="İletişim">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f2ff"/>
+      <stop offset="100%" stop-color="#fff0f5"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#g)"/>
+  <g filter="url(#s)">
+    <rect x="140" y="140" rx="44" ry="44" width="1320" height="787" fill="rgba(255,255,255,0.52)"/>
+    
+        <g transform="translate(560,360)">
+          <rect x="80" y="80" width="320" height="120" rx="60" fill="rgba(255,255,255,0.78)"/>
+          <rect x="90" y="180" width="300" height="70" rx="35" fill="rgba(255,255,255,0.65)"/>
+          <rect x="80" y="230" width="320" height="120" rx="60" fill="rgba(255,255,255,0.78)"/>
+          <circle cx="240" cy="60" r="16" fill="rgba(255,255,255,0.9)"/>
+          <path d="M240,35 C250,48 252,55 240,66 C228,55 230,48 240,35 Z" fill="rgba(255,255,255,0.9)"/>
+        </g>
+        
+    <text x="800" y="250" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="66" fill="#1f2a44" font-weight="800">İletişim</text>
+    <text x="800" y="315" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="26" fill="#1f2a44" opacity="0.78">Randevu & Kayıt için bize ulaşın</text>
+  </g>
+</svg>
