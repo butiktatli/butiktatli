@@ -82,7 +82,6 @@ const SALES_IMAGES = [
   "sales-47.webp",
   "sales-48.webp",
   "sales-49.webp",
-  "sales-50.webp",
   "sales-51.webp",
   "sales-52.webp",
   "sales-53.webp",
