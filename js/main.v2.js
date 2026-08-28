@@ -1027,9 +1027,9 @@
   if (videoGrid && typeof VIDEOS !== "undefined") {
     videoGrid.innerHTML = VIDEOS.map((f, i) => {
       const n = i + 1;
-      return `<div class="video-card" id="vc${n}">
+      return `<div class="video-card" id="vc${n}" data-video-src="videos/${f}">
         <div class="video-thumb" onclick="openVideo(${n})">
-          <video class="video-preview" src="videos/${f}" preload="metadata" muted playsinline></video>
+          <video class="video-preview" data-src="videos/${f}" preload="none" muted playsinline></video>
           <div class="video-overlay"><div class="play-btn" aria-label="Videoyu oynat"><i class="bi bi-play-fill"></i></div></div>
         </div>
         <div class="video-body">
@@ -1038,7 +1038,7 @@
         </div>
         <div class="video-expand" id="ve${n}">
           <div class="video-embed-wrap">
-            <video id="vplayer${n}" controls controlsList="nodownload" muted style="width:100%;height:100%;border-radius:16px;background:#000;" src="videos/${f}"></video>
+            <video id="vplayer${n}" controls controlsList="nodownload" muted preload="none" style="width:100%;height:100%;border-radius:16px;background:#000;"></video>
           </div>
           <div class="video-nav">
             <button class="video-nav-btn" onclick="prevVideo(${n})" aria-label="Önceki video" ${n === 1 ? 'disabled' : ''}><i class="bi bi-chevron-left"></i> Önceki</button>
@@ -1050,9 +1050,24 @@
     }).join("");
   }
 
-  document.querySelectorAll(".video-preview").forEach(v => {
-    v.addEventListener("loadedmetadata", () => { v.currentTime = 2; });
-  });
+  if ("IntersectionObserver" in window) {
+    const vidObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const v = entry.target;
+        v.src = v.dataset.src;
+        v.load();
+        v.addEventListener("loadedmetadata", () => { v.currentTime = 2; }, { once: true });
+        vidObs.unobserve(v);
+      });
+    }, { rootMargin: "300px" });
+    document.querySelectorAll(".video-preview[data-src]").forEach(v => vidObs.observe(v));
+  } else {
+    document.querySelectorAll(".video-preview[data-src]").forEach(v => {
+      v.src = v.dataset.src;
+      v.addEventListener("loadedmetadata", () => { v.currentTime = 2; });
+    });
+  }
 
   let openVideoId = null;
 
@@ -1061,6 +1076,10 @@
     const card   = document.getElementById(`vc${id}`);
     const player = document.getElementById(`vplayer${id}`);
     if (!card || !player) return;
+    if (!player.src) {
+      const src = card.dataset.videoSrc;
+      if (src) { player.src = src; player.load(); }
+    }
     player.muted = true;
     card.classList.add("is-open");
     openVideoId = id;
@@ -1072,6 +1091,8 @@
     const player = document.getElementById(`vplayer${id}`);
     if (!card || !player) return;
     player.pause();
+    player.src = "";
+    player.load();
     card.classList.remove("is-open");
     if (openVideoId === id) openVideoId = null;
   };
