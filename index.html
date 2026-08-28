@@ -1218,6 +1218,41 @@
     </div>
   </div>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       KAMPANYA POPUP  ──  'yes' → popup aktif  |  'no' → popup kapalı
+       Değiştirmek için aşağıdaki satırda  'yes'  veya  'no'  yazın.
+       ═══════════════════════════════════════════════════════════════ -->
+  <div id="popup-overlay" class="hidden" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+    <div id="popup-card">
+      <div id="popup-header">
+        <button id="popup-close" type="button" aria-label="Popup'ı kapat">
+          <i class="bi bi-x-lg" aria-hidden="true"></i>
+        </button>
+        <div id="popup-badge">
+          <i class="bi bi-stars" aria-hidden="true"></i>
+          Özel Kampanya
+        </div>
+        <div id="popup-discount"><sup>%</sup>10</div>
+        <div id="popup-discount-label">Kişi Başı İndirim</div>
+      </div>
+      <div id="popup-body">
+        <h2 id="popup-title">İkili Kayıt Fırsatı!</h2>
+        <p id="popup-desc">
+          <strong>Genel Pastacılık Eğitimi</strong>'ne bir arkadaşınla birlikte kayıt yaptır,
+          kişi başı <strong>%10 indirim</strong> kazan.<br>
+          Birlikte öğren, birlikte eğlen!
+        </p>
+        <a id="popup-cta"
+           href="https://wa.me/905357466331?text=Merhaba%2C+Genel+Pastac%C4%B1l%C4%B1k+E%C4%9Fitimi%27ne+2+ki%C5%9Fi+olarak+kay%C4%B1t+olmak+istiyoruz.+%25+10+indirim+kampanyas%C4%B1+hakk%C4%B1nda+bilgi+alabilir+miyiz%3F"
+           target="_blank" rel="noopener">
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Hemen Bilgi Al
+        </a>
+        <p id="popup-note">* Yalnızca Genel Pastacılık Eğitimi için, 2 kişilik kayıtlarda geçerlidir.</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Vendor JS -->
   <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -1231,6 +1266,39 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       KAMPANYA POPUP KONTROLÜ
+       'yes' → popup göster   |   'no' → popup gösterme
+       ═══════════════════════════════════════════════════════════════ -->
+  <script>
+    const KAMPANYA_AKTIF = 'yes';
+
+    (function () {
+      if (KAMPANYA_AKTIF !== 'yes') return;
+      if (sessionStorage.getItem('popup_closed')) return;
+
+      var overlay  = document.getElementById('popup-overlay');
+      var closeBtn = document.getElementById('popup-close');
+      if (!overlay) return;
+
+      function showPopup() {
+        overlay.classList.remove('hidden');
+      }
+
+      function hidePopup() {
+        overlay.classList.add('hidden');
+        sessionStorage.setItem('popup_closed', '1');
+      }
+
+      setTimeout(showPopup, 2000);
+
+      closeBtn.addEventListener('click', hidePopup);
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') hidePopup();
+      });
+    })();
   </script>
 </body>
 </html>
