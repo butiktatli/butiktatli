@@ -930,37 +930,7 @@
       gsap.to(el, { y: speed, ease: "none", scrollTrigger: { trigger: el, start: "top bottom", end: "bottom top", scrub: true } });
     });
 
-    /* --- Magnetic buttons (desktop only) --- */
-    if (!window.matchMedia("(hover: none)").matches) {
-      document.querySelectorAll(".btn-primary, .hero-actions .btn").forEach(btn => {
-        btn.addEventListener("mousemove", e => {
-          const r = btn.getBoundingClientRect();
-          const x = (e.clientX - r.left - r.width  / 2) * 0.38;
-          const y = (e.clientY - r.top  - r.height / 2) * 0.38;
-          gsap.to(btn, { x, y, duration: 0.25, ease: "power2.out" });
-        });
-        btn.addEventListener("mouseleave", () => {
-          gsap.to(btn, { x: 0, y: 0, duration: 0.6, ease: "elastic.out(1, 0.5)" });
-        });
-      });
-    }
 
-    /* --- 3D card tilt (desktop only) --- */
-    if (!window.matchMedia("(hover: none)").matches) {
-      document.querySelectorAll(".card.course").forEach(card => {
-        card.style.willChange = "transform";
-        card.style.transition = "box-shadow .3s ease"; /* remove CSS transform transition so GSAP controls it alone */
-        card.addEventListener("mousemove", e => {
-          const r   = card.getBoundingClientRect();
-          const rotY = ((e.clientX - r.left - r.width  / 2) / (r.width  / 2)) * 10;
-          const rotX = ((e.clientY - r.top  - r.height / 2) / (r.height / 2)) * -10;
-          gsap.to(card, { rotateX: rotX, rotateY: rotY, transformPerspective: 700, duration: 0.3, ease: "power2.out" });
-        });
-        card.addEventListener("mouseleave", () => {
-          gsap.to(card, { rotateX: 0, rotateY: 0, duration: 0.65, ease: "elastic.out(1, 0.4)" });
-        });
-      });
-    }
   }
 
   /* =================== Contact form =================== */
