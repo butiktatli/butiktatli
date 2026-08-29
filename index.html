@@ -1268,6 +1268,30 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
+  <!-- WhatsApp tıklama takibi -->
+  <script>
+    document.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href*="wa.me"]');
+      if (!a) return;
+      var labels = {
+        't_cta_primary':  'header_siparis_ver',
+        't_m_cta':        'mobil_menu_siparis_ver',
+        't_hero_btn1':    'hero_siparis_ver',
+        't_order_btn':    'siparis_bolumu',
+        't_info_wa_btn':  'iletisim_bolumu',
+        'popup-cta':      'popup_bilgi_al',
+        'wa-float':       'kayan_buton'
+      };
+      var label = labels[a.id] || (a.id || 'diger');
+      if (typeof gtag === 'function') {
+        gtag('event', 'whatsapp_click', {
+          event_category: 'iletisim',
+          event_label: label
+        });
+      }
+    });
+  </script>
+
   <!-- ═══════════════════════════════════════════════════════════════
        KAMPANYA POPUP KONTROLÜ
        'yes' → popup göster   |   'no' → popup gösterme
@@ -1292,7 +1316,7 @@
         sessionStorage.setItem('popup_closed', '1');
       }
 
-      setTimeout(showPopup, 2000);
+      setTimeout(showPopup, 5000);
 
       closeBtn.addEventListener('click', hidePopup);
       document.addEventListener('keydown', function (e) {
