@@ -1173,21 +1173,7 @@ footer { padding: 48px 0 60px; }
   .navbar .nav-inner { padding: 8px 10px; border-radius: 20px; }
 
   .hero { padding-top: 108px; padding-bottom: 44px; }
-  .hero-bg { display: none; }
-  .hero-bg-mobile {
-    display: block;
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-  }
-  .hero-bg-mobile img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    display: block;
-  }
+  .hero-bg { display: block; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; justify-content: center; }
   .hero-card { max-width: 100%; }
