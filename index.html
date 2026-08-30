@@ -147,13 +147,13 @@
 
   <!-- Vendor CSS — non-blocking (perde kapıyor, yüklenince devreye girer) -->
   <link rel="stylesheet" href="css/bootstrap-icons.min.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/aos.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/swiper.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="css/glightbox.min.css" media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet" href="css/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/glightbox.min.css">
   </noscript>
 
@@ -272,14 +272,9 @@
       <!-- Floating sparkles -->
 	  <div class="hero-bg" aria-hidden="true" data-parallax="-28">
     <picture>
+      <source media="(max-width:768px)" srcset="img/hero_banner_mb.webp" type="image/webp">
       <source srcset="img/herobanner.webp" type="image/webp">
-      <img src="img/herobanner.webp" alt="Hero Arkaplan" width="1717" height="916" fetchpriority="high" loading="eager">
-    </picture>
-  </div>
-  <div class="hero-bg-mobile" aria-hidden="true" data-parallax="-28">
-    <picture>
-      <source srcset="img/hero_banner_mb.webp" type="image/webp">
-      <img src="img/hero_banner_mb.webp" alt="" width="1024" height="1024" fetchpriority="high" loading="eager">
+      <img src="img/herobanner.webp" alt="" width="1717" height="916" fetchpriority="high" loading="eager">
     </picture>
   </div>
 
@@ -1255,11 +1250,11 @@
   </div>
 
   <!-- Vendor JS -->
-  <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="js/aos.min.js"></script>
+  <script defer src="js/swiper.min.js"></script>
   <script defer src="js/glightbox.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="js/gsap.min.js"></script>
+  <script defer src="js/ScrollTrigger.min.js"></script>
 
   <!-- App JS -->
   <script defer src="js/images.js"></script>
