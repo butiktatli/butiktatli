@@ -802,7 +802,10 @@
     sections.forEach(s => { if (s.offsetTop <= y) active = s.id; });
     setActive(active);
   };
-  window.addEventListener('scroll', scrollSpy, { passive: true });
+  let spyTick = false;
+  window.addEventListener('scroll', () => {
+    if (!spyTick) { requestAnimationFrame(() => { scrollSpy(); spyTick = false; }); spyTick = true; }
+  }, { passive: true });
   scrollSpy();
 
   /* ============ Navbar show/hide + back-to-top ============ */
@@ -855,10 +858,6 @@
   }
 
   /* =================== Vendor inits =================== */
-  if (window.AOS) {
-    AOS.init({ duration: 750, easing: "ease-out-quart", once: true, offset: 80 });
-  }
-
   if (window.Swiper) {
     new Swiper(".gallerySwiper", {
       slidesPerView: 1, spaceBetween: 12,
@@ -920,18 +919,6 @@
     GLightbox({ selector: ".glightbox", touchNavigation: true, loop: true, openEffect: "zoom", closeEffect: "fade", moreLength: 0 });
   }
 
-  if (window.gsap && window.ScrollTrigger) {
-    gsap.registerPlugin(ScrollTrigger);
-
-
-    /* --- Parallax --- */
-    gsap.utils.toArray("[data-parallax]").forEach(el => {
-      const speed = parseFloat(el.dataset.parallax) || -30;
-      gsap.to(el, { y: speed, ease: "none", scrollTrigger: { trigger: el, start: "top bottom", end: "bottom top", scrub: true } });
-    });
-
-
-  }
 
   /* =================== Contact form =================== */
   const form      = $("#contactForm");
@@ -1079,20 +1066,24 @@
   const scrollRing     = $("#scrollRing");
   const scrollRingFill = $("#scrollRingFill");
   if (scrollRing && scrollRingFill) {
-    const C = 2 * Math.PI * 20; // circumference for r=20 ≈ 125.66
+    const C = 2 * Math.PI * 20;
     const updateRing = () => {
       const total    = document.documentElement.scrollHeight - window.innerHeight;
       const progress = total > 0 ? Math.min(window.scrollY / total, 1) : 0;
       scrollRingFill.style.strokeDashoffset = C * (1 - progress);
       scrollRing.classList.toggle("visible", window.scrollY > 200);
     };
-    window.addEventListener("scroll", updateRing, { passive: true });
+    let ringTick = false;
+    window.addEventListener("scroll", () => {
+      if (!ringTick) { requestAnimationFrame(() => { updateRing(); ringTick = false; }); ringTick = true; }
+    }, { passive: true });
     scrollRing.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
     updateRing();
   }
 
-  // === Cookie Cat ===
+  // === Cookie Cat (desktop only) ===
   (function () {
+    if (window.matchMedia('(max-width: 768px)').matches) return;
     const catWrap    = document.querySelector('#cookie-cat');
     const catSvg     = document.querySelector('#ccat-svg');
     const cPath      = document.querySelector('#ccat-cookie-path');
@@ -1190,7 +1181,10 @@
       }
     }
 
-    window.addEventListener('scroll', updateCat, { passive: true });
+    let catTick = false;
+    window.addEventListener('scroll', () => {
+      if (!catTick) { requestAnimationFrame(() => { updateCat(); catTick = false; }); catTick = true; }
+    }, { passive: true });
     updateCat();
 
     /* --- Click: 3 jumps → turn → walk off --- */
