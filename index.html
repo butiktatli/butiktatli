@@ -136,6 +136,8 @@
   <!-- Preconnect -->
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
+  <link rel="preload" as="font" href="css/fonts/bootstrap-icons.woff2" type="font/woff2" crossorigin>
+
   <!-- LCP hero preload -->
   <link rel="preload" as="image" href="img/herobanner.webp" media="(min-width:769px)" fetchpriority="high">
   <link rel="preload" as="image" href="img/hero_banner_mb.webp" media="(max-width:768px)" fetchpriority="high">
@@ -215,11 +217,7 @@
         </nav>
 
         <div class="nav-actions" aria-label="Hızlı aksiyonlar">
-          <div class="lang-switch" aria-label="Dil seçimi">
-            <button type="button" id="langTR" class="active" aria-label="Türkçe">TR</button>
-            <button type="button" id="langEN" aria-label="English">EN</button>
-          </div>
-          <a class="btn btn-primary btn-wa" href="https://wa.me/905357466331?text=Merhaba%2C+pasta+sipar%C4%B1%C5%9Fi+vermek+istiyorum." target="_blank" rel="noopener" id="t_cta_primary">
+<a class="btn btn-primary btn-wa" href="https://wa.me/905357466331?text=Merhaba%2C+pasta+sipar%C4%B1%C5%9Fi+vermek+istiyorum." target="_blank" rel="noopener" id="t_cta_primary">
             <i class="bi bi-whatsapp"></i> <span>Sipariş Ver</span>
           </a>
           <a class="btn" href="#courses" id="t_cta_secondary"><i class="bi bi-mortarboard"></i> <span>Eğitimler</span></a>
@@ -249,10 +247,6 @@
         <a href="#reviews" id="t_m_reviews">Yorumlar <i class="bi bi-arrow-right"></i></a>
         <a href="#contact" id="t_m_contact">İletişim <i class="bi bi-arrow-right"></i></a>
         <div class="sep"></div>
-        <div style="display:flex; gap:10px; padding: 6px 6px 2px;">
-          <button type="button" class="btn" style="padding:10px 14px;" id="langTR_m">TR</button>
-          <button type="button" class="btn" style="padding:10px 14px;" id="langEN_m">EN</button>
-        </div>
         <div class="sep"></div>
         <a href="https://wa.me/905357466331?text=Merhaba%2C+pasta+sipar%C4%B1%C5%9Fi+vermek+istiyorum." target="_blank" rel="noopener" id="t_m_cta" class="mobile-wa-btn">
           <i class="bi bi-whatsapp"></i> WhatsApp'tan Sipariş Ver
@@ -693,23 +687,6 @@
       </div>
     </section>
 
-    <!-- VIDEOLAR -->
-    <section id="videos" class="section" aria-label="Atölye Videoları">
-      <div class="container">
-        <div class="header">
-          <div>
-            <div class="section-tag"><i class="bi bi-play-circle-fill"></i> <span id="t_videos_tag">Videolar</span></div>
-            <h2 id="t_videos_h2">Atölyemizden <span class="gradient-text">videolar.</span></h2>
-            <p class="subtitle" id="t_videos_sub">
-              Eğitimlerimizden canlı atölye çalışması videoları.
-            </p>
-          </div>
-          <div class="badge" id="t_videos_badge"><i class="bi bi-camera-video-fill"></i> <span id="t_videos_badge_text">Atölye Videoları</span></div>
-        </div>
-
-        <div class="video-grid" id="videoGrid"></div>
-      </div>
-    </section>
 
     <!-- ÖDÜLLER & BELGELER -->
     <section id="awards" class="section section-alt" aria-label="Ödüller ve Belgeler">
@@ -1242,7 +1219,7 @@
   <!-- Vendor JS -->
   <script defer src="js/swiper.min.js"></script>
   <script defer src="js/glightbox.min.js"></script>
-  <script defer src="js/gsap.min.js"></script>
+  <script>if(!window.matchMedia('(max-width:768px)').matches){var s=document.createElement('script');s.src='js/gsap.min.js';document.head.appendChild(s);}</script>
 
   <!-- App JS -->
   <script defer src="js/images.js"></script>

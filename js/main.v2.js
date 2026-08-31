@@ -1,4 +1,4 @@
-/* ---------------------------------------------------------
+﻿/* ---------------------------------------------------------
    Butiktatli - main.js
    - Smooth anchor offset (fixed navbar)
    - Scrollspy active links
@@ -221,206 +221,6 @@
       toast_email:    "Lütfen geçerli bir e-posta girin.",
       toast_msg:      "Mesaj en az 10 karakter olmalı.",
       toast_ok:       "✓ Mesajınız iletildi! En kısa sürede dönüş yapacağız."
-    },
-    en: {
-      title:          "Boutique Cake Orders Istanbul | Pastry Classes | Butiktatli",
-      desc:           "Boutique cake orders and custom-design cakes in Istanbul. Birthday, engagement cakes, macarons, cupcakes. Professional pastry classes. 20+ years experience.",
-      ogDesc:         "Boutique cake orders, dessert sales and professional pastry classes in Istanbul.",
-      skip:           "Skip to content",
-      nav_about:      "About",
-      nav_courses:    "Classes",
-      nav_satis:      "Order a Cake",
-      nav_gallery:    "Gallery",
-      nav_contact:    "Contact",
-      cta_primary:    "Order Now",
-      cta_secondary:  "Classes",
-      m_about:        "About",
-      m_courses:      "Classes",
-      m_satis:        "Order a Cake",
-      m_gallery:      "Gallery",
-      m_contact:      "Contact",
-      m_cta:          "Order via WhatsApp",
-      kicker:         "Boutique cakes • Custom orders • Professional classes",
-      h1:             "Boutique cake orders and pastry classes in Istanbul.",
-      hero_lead:      "Macarons, cupcakes, buttercream, custom cakes… With 20+ years of experience, we take custom orders and teach hands-on classes for every level.",
-      hero_btn1:      "Order Now",
-      hero_btn2:      "Explore Classes",
-      stat1:          "Years Experience",
-      stat2:          "Happy Customers",
-      stat3:          "Students Trained",
-      pill1_title:    "Order & Sales",
-      pill1_sub:      "Custom design",
-      pill2_title:    "Hands-on Class",
-      pill2_sub:      "1–4 people",
-      about_tag:      "About Us",
-      about_h2:       "Boutique pastry is our passion.",
-      about_sub:      "Butiktatli is a workshop where boutique dessert production meets education.",
-      about_badge:    "20+ Years",
-      about_lead:     "With over 20 years of experience, we take boutique cake orders and teach classes on macarons, cupcakes, buttercream and cake design. Our goal isn't memorizing recipes—it's mastering technique.",
-      tick1:          "Production-grade recipes and ingredient know-how",
-      tick2:          "Chef-led step-by-step practice + feedback",
-      tick3:          "Decoration, fillings and presentation techniques",
-      tick4:          "Tips you can apply at home or professionally",
-      about_btn:      "Get Info",
-      awards_tag:     "Awards & Credentials",
-      awards_h2:      "Awards & credentials.",
-      awards_sub:     "From international competitions to official professional qualifications — a curated selection of the awards and credentials earned throughout my pastry career.",
-      awards_badge:   "Internationally Awarded",
-      aw1_lbl: "Silver Medal",   aw1_org: "International · Pastry Artistic D2", aw1_yr: "Stuttgart · February 2020",
-      aw2_lbl: "International",                                                   aw2_yr: "Stuttgart · February 2024",
-      aw3_lbl: "Gold Medal",     aw3_h3: "Pastry Cup Achievement Award",
-      aw4_lbl: "Merit Medal",    aw4_h3: "Bakırköy Pastry Festival",   aw4_org: "Artistic Category",  aw4_yr: "Istanbul · 2015",
-      aw5_lbl: "Level 4",        aw5_h3: "Pastry Vocational Qualification", aw5_org: "MYK · UGETAM Certified",
-      aw6_h3: "Master Trainer Certificate",          aw6_org: "Turkish Ministry of National Education",
-      aw7_lbl: "Mastery",        aw7_h3: "Cake & Dessert Mastery Certificate", aw7_org: "Turkish Ministry of National Education",
-      aw8_lbl: "120 Hours",      aw8_h3: "Boutique Chocolate Making",   aw8_org: "MEB Lifelong Learning",
-      aw9_lbl: "256 Hours",      aw9_h3: "Sugar Paste Flower Making",   aw9_org: "MEB Lifelong Learning",
-      aw10_lbl: "University",    aw10_h3: "Flower & Figure Modelling",  aw10_org: "Istanbul Aydın University",
-      courses_tag:    "Classes",
-      courses_h2:     "Pastry classes.",
-      courses_sub:    "All levels welcome: from fundamentals to advanced boutique pastry.",
-      courses_badge:  "Hands-on Workshop",
-      c1_register:    "Enroll",
-      c1_title:       "Macaron Masterclass",
-      c1_desc:        "Shell balance, macaronage, oven tuning and fillings. We troubleshoot cracks and missing feet together.",
-      c1_chip1:       "1 day",
-      c1_chip2:       "1–4 people",
-      c1_chip3:       "All levels",
-      c2_register:    "Enroll",
-      c2_title:       "Cupcake & Buttercream",
-      c2_desc:        "Moist cake bases, fillings, buttercream consistency and piping. Includes boxing and display presentation.",
-      c2_chip1:       "1 day",
-      c2_chip2:       "1–4 people",
-      c2_chip3:       "All levels",
-      c3_register:    "Enroll",
-      c3_title:       "Boutique Cake Design",
-      c3_desc:        "Layering, ganache, smooth coating, slicing and modern decor. You build your cake from scratch and leave with a boutique finish.",
-      c3_chip1:       "1 day",
-      c3_chip2:       "1–4 people",
-      c3_chip3:       "All levels",
-      c4_register:    "Enroll",
-      c4_title:       "General Package Course",
-      c4_desc:        "Figurine cake, macarons, cupcakes, Swiss meringue, cake pops, fondant cake and flower decoration — the essential techniques in one 6-lesson package.",
-      c4_chip1:       "6 lessons",
-      c4_chip2:       "1–4 people",
-      c4_chip3:       "All levels",
-      c5_register:    "Enroll",
-      c5_title:       "Figure Modelling Course",
-      c5_desc:        "Three-dimensional figure modelling with sugar paste and fondant — people, animals and objects. Master colour blending, fine detail work and structural balance to turn your cake into a work of edible art.",
-      c5_chip1:       "1 day",
-      c5_chip2:       "1–4 people",
-      c5_chip3:       "Intermediate+",
-      c6_register:    "Enroll",
-      c6_title:       "Milk-Based Desserts",
-      c6_desc:        "Muhallebi, kazandibi, baked rice pudding, trileçe, supangle, profiterol and tavuk göğsü — we make and taste each dessert together in the studio. Covers texture control, professional plating and portioning. Suitable for home bakers and those aiming for commercial production alike.",
-      c6_chip1:       "1 day",
-      c6_chip2:       "1–4 people",
-      c6_chip3:       "All levels",
-      c7_register:    "Enroll",
-      c7_title:       "Cookie Workshop",
-      c7_desc:        "We cover dough texture, shaping, baking times and decoration techniques for professional-level pastry shop cookies — classic, salted, chocolate, filled and decorative varieties. The goal isn't just recipes: it's building the production knowledge and discipline of a professional baker.",
-      c7_chip1:       "1 day",
-      c7_chip2:       "1–4 people",
-      c7_chip3:       "All levels",
-      course_own:     "Everything you make in class is yours to keep.",
-      categories_title: "Cake Varieties We Make to Order",
-      allTypes: "All Types",
-      catNames: {
-        'anneler-gunu-pastasi.html': "Mother's Day Cake",
-        'dogum-gunu-pastasi.html':   'Birthday Cake',
-        'nisan-pastasi.html':        'Engagement Cake',
-        'cupcake.html':              'Cupcake',
-        'makaron.html':              'Boutique Macarons',
-        'cocuk-pastasi.html':        "Kids' Cakes",
-        'cicekli-pasta.html':        'Floral Cakes',
-        'kremali-pasta.html':        'Cream Cakes',
-        'resim-baski-pasta.html':    'Photo Print Cakes',
-        'sevgililer-gunu-pastasi.html': "Valentine's Day Cakes",
-        'taraftar-spor-pastasi.html':'Fan & Sports Cakes',
-        'vegan-pasta.html':          'Vegan Cakes',
-        'cakepops.html':             'Cake Pops'
-      },
-      tags: [
-        "Father's Day Cake",'Letter Cake','Welcome Baby Cake',
-        'Baby Shower Cake','1st Birthday Cake','First Tooth Cake',
-        'Doctor Cake','Adult Cakes','Naked Cake',
-        '3D Dress Cake','Meringue','Cookies',
-        'Cartoon Character Cake','Figurine Cake',
-        'Wedding Cake','Custom Design Cake Istanbul'
-      ],
-      satis_tag:      "Order a Cake",
-      satis_h2:       "Custom boutique cake orders.",
-      satis_sub:      "We make custom boutique cakes for birthdays, weddings, engagements and special occasions. Share your idea on WhatsApp and we'll prepare a personalised quote.",
-      satis_badge:    "Order-Based",
-      order_title:    "Ordering is easy!",
-      order_desc:     "Send us your desired design, size and date on WhatsApp. We'll prepare your personalised quote as soon as possible.",
-      order_btn_text: "Order via WhatsApp",
-      gallery_tag:    "Gallery",
-      gallery_badge:  "Workshop Photos",
-      gallery_h2:     "Moments from our workshop.",
-      gallery_sub:    "Photos from our classes and workshop sessions. Click to enlarge.",
-      videos_tag:     "Videos",
-      videos_badge:   "Workshop Videos",
-      videos_h2:      "Videos from our workshop.",
-      videos_sub:     "Live workshop videos from our pastry classes.",
-      v1_title:       "Workshop Session 1",
-      v1_desc:        "Pastry class from Butiktatli workshop.",
-      v2_title:       "Workshop Session 2",
-      v2_desc:        "Pastry class from Butiktatli workshop.",
-      v3_title:       "Workshop Session 3",
-      v3_desc:        "Pastry class from Butiktatli workshop.",
-      v4_title:       "Workshop Session 4",
-      v4_desc:        "Pastry class from Butiktatli workshop.",
-      v5_title:       "Workshop Session 5",
-      v5_desc:        "Pastry class from Butiktatli workshop.",
-      v6_title:       "Workshop Session 6",
-      v6_desc:        "Pastry class from Butiktatli workshop.",
-      v7_title:       "Workshop Session 7",
-      v7_desc:        "Pastry class from Butiktatli workshop.",
-      v8_title:       "Workshop Session 8",
-      v8_desc:        "Pastry class from Butiktatli workshop.",
-      contact_tag:    "Contact",
-      contact_h2:     "Get in touch with us.",
-      contact_sub:    "Leave a message for enrollment, pricing, orders and schedule. We'll get back to you shortly.",
-      contact_badge:  "Fast Reply",
-      label_name:     "Full Name",
-      ph_name:        "Your name",
-      label_email:    "Email",
-      ph_email:       "hello@example.com",
-      label_phone:    "Phone",
-      label_subject:  "Subject",
-      ph_subject:     "Cake order / class info / booking",
-      label_message:  "Message",
-      ph_message:     "Tell us what you need (e.g. I'd like to order a birthday cake)...",
-      contact_btn:    "Send Message",
-      info_phone:     "Phone / WhatsApp",
-      info_email:     "Email",
-      info_addr:      "Location",
-      info_wa_btn:    "Text on WhatsApp",
-      footer_brand:   "Butiktatli",
-      footer_p:       "Boutique dessert sales and pastry classes: macarons, cupcakes and cake design. Learn hands-on in our workshop and apply confidently at home or at work.",
-      footer_small:   "Message us on WhatsApp or use the contact form.",
-      reviews_tag:    "Reviews",
-      reviews_h2:     "What do our customers say?",
-      reviews_sub:    "Rated 5 stars across 151 Google reviews.",
-      reviews_badge:  "Google Verified",
-      reviews_count:  "151 reviews",
-      reviews_cta:    "See All Reviews on Google",
-      reviews_all:    "See All 151 Reviews on Google",
-      reviews_note:   "Reviews verified by Google.",
-      rev1_text:      "Zeynep Hanım is incredibly talented — the cake turned out exactly as we wanted. The taste was wonderful, everyone loved it. It was absolutely the perfect choice for my son's first birthday. Thank you so much, a true masterpiece! ♥️",
-      rev2_text:      "I took a pastry course from Zeynep Hoca and words can't describe how happy I am. She truly loves what she does and teaches it brilliantly. Everything we made was delicious and everyone devoured it 😍 So glad our paths crossed 🌺",
-      rev3_text:      "Zeynep Hanım prepared a wonderful cake for our son's birthday — gluten-free, sugar-free and absolutely delicious. Thank you so much for your effort 🌸",
-      footer_link1:   "About",
-      footer_link2:   "Classes",
-      footer_link3:   "Order a Cake",
-      footer_link4:   "Gallery",
-      footer_link5:   "Reviews",
-      footer_link6:   "Contact",
-      toast_name:     "Please enter your name.",
-      toast_email:    "Please enter a valid email.",
-      toast_msg:      "Message must be at least 10 characters.",
-      toast_ok:       "✓ Message sent! We'll get back to you shortly."
     }
   };
 
@@ -694,12 +494,6 @@
       ["t_contact_sub",  L.contact_sub]
     ].forEach(([id, txt]) => set(id, txt));
 
-    const isTR = lang === "tr";
-    $("#langTR")?.classList.toggle("active", isTR);
-    $("#langEN")?.classList.toggle("active", !isTR);
-    $("#langTR_m")?.classList.toggle("active", isTR);
-    $("#langEN_m")?.classList.toggle("active", !isTR);
-
     applyLang._toast = { name: L.toast_name, email: L.toast_email, msg: L.toast_msg, ok: L.toast_ok };
 
     /* Firefox reflow fix: dil değişince navbar gizlenmesini önle */
@@ -708,19 +502,7 @@
     setTimeout(() => { lastY = _lastY; }, 150);
   };
 
-  const getLang = () => {
-    const saved = localStorage.getItem("butiktatli_lang");
-    if (saved === "tr" || saved === "en") return saved;
-    return "tr";
-  };
-  const setLang = (lang) => { localStorage.setItem("butiktatli_lang", lang); applyLang(lang); };
-
-  $("#langTR")?.addEventListener("click",   () => setLang("tr"));
-  $("#langEN")?.addEventListener("click",   () => setLang("en"));
-  $("#langTR_m")?.addEventListener("click", () => setLang("tr"));
-  $("#langEN_m")?.addEventListener("click", () => setLang("en"));
-
-  applyLang(getLang());
+  applyLang("tr");
 
   /* =================== Mobile menu =================== */
   let menuOpenScrollY = 0;
