@@ -641,9 +641,16 @@
 
   /* =================== Vendor inits =================== */
   if (window.Swiper) {
+    const galleryWrapper = document.getElementById("galleryWrapper");
+    if (galleryWrapper && typeof EDU_IMAGES !== "undefined") {
+      galleryWrapper.innerHTML = EDU_IMAGES.map((f, i) =>
+        `<div class="swiper-slide"><a class="gallery-item glightbox" href="img/${f}" data-gallery="edu" data-title="Butiktatli Pastacılık Eğitimi"><img src="img/${f}" alt="Butiktatli pastacılık eğitimi atölyesi ${i + 1}" loading="lazy" /><div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div></a></div>`
+      ).join("");
+    }
+
     new Swiper(".gallerySwiper", {
       slidesPerView: 1, spaceBetween: 12,
-      loop: true, watchOverflow: true,
+      loop: false, rewind: true, watchOverflow: true,
       observer: true, observeParents: true,
       touchStartPreventDefault: false,
       breakpoints: {
@@ -655,16 +662,9 @@
       a11y: { prevSlideMessage: "Önceki", nextSlideMessage: "Sonraki" }
     });
 
-    const galleryWrapper = document.getElementById("galleryWrapper");
-    if (galleryWrapper && typeof EDU_IMAGES !== "undefined") {
-      galleryWrapper.innerHTML = EDU_IMAGES.map((f, i) =>
-        `<div class="swiper-slide"><a class="gallery-item glightbox" href="img/${f}" data-gallery="edu" data-title="Butiktatli Pastacılık Eğitimi"><img src="img/${f}" alt="Butiktatli pastacılık eğitimi atölyesi ${i + 1}" loading="lazy" /><div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div></a></div>`
-      ).join("");
-    }
-
     new Swiper(".reviewsSwiper", {
       slidesPerView: 1, spaceBetween: 22,
-      loop: true, watchOverflow: true,
+      loop: false, rewind: true, watchOverflow: true,
       observer: true, observeParents: true,
       touchStartPreventDefault: false,
       breakpoints: {
